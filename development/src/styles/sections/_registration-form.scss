@@ -1,0 +1,173 @@
+.registration-form {
+  background: url('../img/generation-z-and-accounting.jpg') center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 70px);
+  padding-top: 70px;
+  display: table;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($white, .7);
+  }
+  .form-item {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.3);
+    border: 1px solid rgb(239, 239, 239);
+    max-width: 620px;
+    margin: auto;
+    height: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 145px 70px 20px 55px;
+    position: relative;
+    z-index: 1;
+    @include adapt_to("large-phone") {
+      padding: 45px 20px 20px;
+    }
+    &--title {
+      font-size: 24px;
+      line-height: normal;
+      font-family: $font-exo-b;
+      color: #222222;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+    label {
+      font-size: 16px;
+      color: #565656;
+      font-family: $font-exo;
+      line-height: normal;
+      margin: 0;
+    }
+    .form-input {
+      box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.15);
+      background: $white;
+      border: 1px solid #e7f0f2;
+      color: #527ba4;
+      font-size: 16px;
+      font-family: $font-exo;
+      margin-bottom: 20px;
+      width: 100%;
+      height: 57px;
+      padding: 0 15px;
+      &::placeholder {
+        color: rgba(#527ba4, .4);
+      }
+    }
+    .form-code {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      .help-block-error {
+        right: 23px;
+      }
+    }
+    .get-sms {
+      font-size: 14px;
+      line-height: 18px;
+      color: #4c70bb;
+      font-family: $font-exo;
+    }
+    .form-text {
+      margin-top: -10px;
+      font-size: 14px;
+      line-height: normal;
+      letter-spacing: -0.5px;
+      color: #888888;
+      font-family: $font-exo;
+    }
+  }
+  .default-btn {
+    border: none;
+    margin: 30px auto;
+    padding: 18px 68px;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .qwick-enter {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    .link {
+      background: linear-gradient(45deg, rgba(1,2,3, .25) 0%, rgba(255,255,255, .25) 100%), #4f78a3;
+      background-blend-mode: soft-light;
+      color: $white;
+      box-shadow: 0 5px 15px 0 rgba(79, 120, 163, 0.2);
+      border-radius: 30px;
+      padding: 12px 25px;
+      display: flex;
+      margin-bottom: 20px;
+      align-items: center;
+      transition: all 0.3s ease;
+      &:hover, &:focus {
+        outline: none;
+        box-shadow: none;
+        text-decoration: none;
+      }
+      &:first-child {
+        margin-right: 10px;
+      }
+      &.facebook {
+        background: linear-gradient(45deg, rgba(1,2,3, .25) 0%, rgba(255,255,255, .25) 100%), #384c91;
+        background-blend-mode: soft-light;
+      }
+    }
+    span {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $white;
+      margin-right: 10px;
+    }
+    .vk-ico {
+      width: 13px;
+      height: 8px;
+      fill: #456d99;
+    }
+    .facebook-ico {
+      width: 6px;
+      height: 12px;
+      fill: #2d3f82;
+    }
+  }
+  .registration-link {
+    font-size: 18px;
+    line-height: 35px;
+    color: #b60e6d;
+    font-family: $font-exo;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    &::after {
+      content: '';
+      -webkit-mask: url('../img/svg/arrow.svg') no-repeat;
+      background-color: #b60e6d;
+      width: 7px;
+      height: 11px;
+      margin-left: 10px;
+    }
+  }
+  .forgot-pass {
+    margin-top: -10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4c70bb;
+    font-family: $font-exo;
+  }
+}

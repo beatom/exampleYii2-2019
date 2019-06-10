@@ -1,0 +1,127 @@
+.grafic-tabs {
+  background: $white;
+  border-radius: 8px;
+  padding-top: 25px;
+  .nav-tabs {
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    .nav-item {
+      margin-bottom: 0;
+      &:first-child .nav-link {
+        &::after {
+          content: '';
+          width: 1px;
+          height: 30px;
+          background: #222222;
+          margin: 0 25px;
+        }
+      }
+    }
+    .nav-link {
+      border: none;
+      color: #222222;
+      font-size: 18px;
+      line-height: 20px;
+      padding: 0;
+      font-family: $font-exo;
+      display: flex;
+      &.active {
+        color: #ff6000;
+        text-decoration: underline;
+      }
+      &:hover {
+        color: #ff6000;
+      }
+    }
+  }
+  .tab-content {
+    .month-grafic {
+      max-width: 100%;
+      height: 360px;
+      padding: 30px 15px;
+      color: #ffffff;
+      .highcharts-color-0 {
+        tspan {
+          fill: $white;
+        }
+        &:hover {
+          fill: #fb5e05;
+          opacity: 1;
+        }
+      }
+      g.highcharts-label.highcharts-tooltip-box.highcharts-color-0 {
+        fill: transparent;
+      }
+      .highcharts-tooltip-box .highcharts-label-box {
+        fill: #fb5e05;
+        fill-opacity: 1;
+        color: $white;
+        border-radius: 30px;
+        .highcharts-tooltip text {
+          fill: $white;
+          font-size: 14px;
+          font-family: $font-exo;
+        }
+      }
+
+      .highcharts-background {
+        fill: rgba($white, .0);
+        stroke: rgba($white, .0);
+        stroke-width: 0;
+      }
+      .highcharts-axis-labels {
+        fill: $white;
+        font-family: $font-exo;
+        cursor: default;
+        font-size: 14px;
+      }
+      #gradient-0 stop, #gradient-2 stop {
+        stop-color: #3ec7e8;
+      }
+      #gradient-0 stop[offset="0"], #gradient-2 stop[offset="0"] {
+        stop-opacity: 0.75;
+      }
+      #gradient-0 stop[offset="1"], #gradient-2 stop[offset="1"] {
+        stop-opacity: 0;
+      }
+      #gradient-1 stop, #gradient-3 stop {
+        stop-color: #ffffff;
+      }
+      #gradient-1 stop[offset="0"], #gradient-3 stop[offset="0"] {
+        stop-opacity: 0;
+      }
+      #gradient-1 stop[offset="1"], #gradient-3 stop[offset="1"] {
+        stop-opacity: 0.25;
+
+      }
+      .highcharts-plot-background {
+        fill: url(#gradient-1);
+      }
+      .highcharts-color-0 .highcharts-area {
+        fill-opacity: 1;
+        fill: url(#gradient-0);
+      }
+      .highcharts-root text {
+        fill: rgba(#222222, .8);
+      }
+    }
+    .days-grafic {
+      .highcharts-plot-background {
+        fill: url(#gradient-3);
+      }
+      .highcharts-color-0 .highcharts-area {
+        fill-opacity: 1;
+        fill: url(#gradient-2);
+      }
+    }
+
+  }
+  .highcharts-tooltip-box {
+    fill-opacity: 1;
+    fill: #fb5e05;
+    tspan {
+      fill: $white;
+    }
+  }
+}

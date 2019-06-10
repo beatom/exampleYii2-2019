@@ -1,0 +1,16 @@
+.grafic-tabs
+  .container
+    .row
+      .col
+        h2 Результаты наших аналитиков в цифрах
+        ul#myTab.nav.nav-tabs(role='tablist')
+          li.nav-item
+            a#month-tab.nav-link.active(data-toggle='tab' href='#month' role='tab' aria-controls='home' aria-selected='true') по месяцам
+          li.nav-item
+            a#days-tab.nav-link(data-toggle='tab' href='#days' role='tab' aria-controls='days' aria-selected='false') по дням
+        #myTabContent.tab-content
+          #month.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='month-tab')
+            .month-grafic#month-grafic
+          #days.tab-pane.fade(role='tabpanel' aria-labelledby='days-tab')
+            .month-grafic#days-grafic
+

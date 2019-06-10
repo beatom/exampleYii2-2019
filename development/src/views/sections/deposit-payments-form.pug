@@ -1,0 +1,22 @@
+.deposit-payments-form
+  .deposit-payments-form__top
+    .deposit-payments-form__payment--item
+      img(src='img/payment-1.png').deposit-payments-form__payment
+    .deposit-payments-form__deposit Пополнение счета через
+      span Visa/MasterCard
+
+  form(action='#').deposit-payments-form__amount
+    .form-group
+      label Введите сумму
+      .input-group-append
+        input(type='text' placeholder='|').form-control
+        span $
+    .form-group
+      button(type='submit').default-btn Пополнить
+
+  .deposit-payments-form__info
+    .deposit-payments-form__info--item Сумма пополнения (мин/макс):
+    .deposit-payments-form__info--item__amount 500 RUB / 100 000 RUB
+  .deposit-payments-form__info
+    .deposit-payments-form__info--item Комиссия:
+    .deposit-payments-form__info--item__amount 1.5%

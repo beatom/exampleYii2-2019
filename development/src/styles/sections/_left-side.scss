@@ -1,0 +1,122 @@
+.left-side {
+  box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.3);
+  background: $white;
+  grid-column: auto;
+  width: 120px;
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  .navbar-collapse {
+    align-items: flex-start;
+  }
+  .logo {
+    width: 100%;
+    img {
+      width: 50px;
+      height: auto;
+      margin: 15px auto;
+      display: table;
+    }
+  }
+  .menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @extend .center-column;
+    a {
+      @extend .center-column;
+      text-align: center;
+      font-size: 13px;
+      line-height: 16px;
+      color: #222222;
+      font-family: $font-exo-m;
+      width: 100%;
+      border-bottom: 1px solid #efefef;
+      padding: 0 10px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .icon {
+      height: 27px;
+      margin-bottom: 10px;
+      -webkit-mask-size: cover;
+      background: #b60e6d;
+    }
+    .cabinet-ico {
+      width: 22px;
+      -webkit-mask-image: url('../img/svg/cabinet-ico.svg');
+    }
+    .deposit-ico {
+      width: 27px;
+      -webkit-mask-image: url('../img/svg/deposit-ico.svg');
+    }
+    .rates-ico {
+      width: 43px;
+      height: 20px;
+      -webkit-mask-image: url('../img/svg/rates-ico.svg');
+    }
+    .cashback-ico {
+      width: 32px;
+      height: 24px;
+      -webkit-mask-image: url('../img/svg/cashback-ico.svg');
+    }
+    .promo-ico {
+      width: 35px;
+      -webkit-mask-image: url('../img/svg/promo-ico.svg');
+    }
+    .history-ico {
+      width: 26px;
+      -webkit-mask-image: url('../img/svg/history-ico.svg');
+    }
+    .news-ico {
+      width: 27px;
+      -webkit-mask-image: url('../img/svg/news-ico.svg');
+    }
+    li {
+      width: 100%;
+      &.active, &:hover {
+        background: linear-gradient(-90deg, rgba(142, 32, 86, 0.03) 0%, rgba(255, 255, 255, 0.03) 15%) no-repeat border-box, linear-gradient(90deg, rgba(142, 32, 86, 0.03) 0%, rgba(255, 255, 255, 0.03) 15%) no-repeat border-box, linear-gradient(to right, rgba(142, 32, 86, 0.1) 0%, rgba(255, 255, 255, 0.1) 30%) no-repeat border-box;
+        .icon {
+          background-image: -webkit-linear-gradient(90deg, rgb(182, 14, 109) 0%, rgb(255, 93, 28) 100%);
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @include adapt_to('desktop') {
+    width: 100%;
+    height: auto;
+    display: table;
+    .logo {
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: $white;
+    }
+    .navbar-toggler {
+      top: 35px;
+      left: 17px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .navbar-collapse {
+      width: 100%;
+      max-height: calc(100vh - 80px);
+      overflow: auto;
+    }
+    .menu-list {
+      width: 100%;
+    }
+  }
+}

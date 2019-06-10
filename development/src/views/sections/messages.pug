@@ -1,0 +1,51 @@
+.messages
+  .invitations--title
+    a(href='#').back-arrow
+      +sprite("icon", "left-arrow")
+    |Сообщения
+  .messages-items
+    .messages-item.unread
+      .messages-item__user.col
+        .messages-item__user--avatar
+          img(src='./img/message-avatar.jpg')
+          .messages-item__user--avatar__count 1
+        .messages-item__user--info
+          .messages-item__user--info__name Алексей Щербаков
+          .messages-item__user--info__date Сегодня в 14:20
+      .messages-item__message.col
+        .messages-item__message--title Вам зачислен бонус!
+        p Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+      .messages-item__hav-message.col
+        img(src='./img/message-ico.png').messages-item__hav-message--ico
+
+    .messages-item
+      .messages-item__user.col
+        .messages-item__user--avatar
+          img(src='./img/message-avatar.jpg')
+        .messages-item__user--info
+          .messages-item__user--info__name Алексей Щербаков
+          .messages-item__user--info__date Сегодня в 14:20
+      .messages-item__message.col
+        .messages-item__message--title Re: Не могу пройти верификацию
+        p Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+      .messages-item__hav-message.col
+
+
+
+  .messages-read
+    .messages-read--incoming
+      .messages-item__user--avatar
+        img(src='./img/message-avatar.jpg')
+      .messages-read--incoming__message
+        .messages-item__user--info
+          .messages-item__user--info__name Алексей Щербаков
+          .messages-item__user--info__date Сегодня в 14:20
+        .messages-read--incoming__message--item
+          p
+            b What is Lorem Ipsum?
+            br
+            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            br
+            br
+            | С уважением и заботой,
+            | Помощник, invest.

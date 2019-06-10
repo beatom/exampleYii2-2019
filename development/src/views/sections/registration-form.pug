@@ -1,0 +1,61 @@
+.registration-form
+  .form-item
+    .form-item--title Регистрация
+    .registration.step-one
+      .col
+        .row.align-items-baseline
+          .col-md-3
+            label Логин
+          .col-md-9.px-0
+            input(type='text' placeholder='Придумайте логин').form-input
+        .row.align-items-baseline
+          .col-md-3
+            label Телефон
+          .col-md-9.px-0
+            input(type='text' placeholder='Введите номер телефона').form-input
+        .row.align-items-baseline
+          .col-md-3
+            label Смс код
+          .col-md-9.px-0.has-error
+            .row.form-code
+              .col-md-7
+                input(type='text' placeholder='Смс код').form-input
+                .help-block-error смс код неверный
+              .col-md-5
+                a(href='#').get-sms Выслать смс код
+            .form-code--item
+
+
+
+        .row
+          .col
+            button(type='submit').default-btn Готово
+
+
+    .registration.step-two
+      .col
+        .row.align-items-baseline
+          .col-md-3
+            label Имя
+          .col-md-9.px-0
+            input(type='text' placeholder='Введите своё имя').form-input
+        .row.align-items-baseline
+          .col-md-3
+            label Почта
+          .col-md-9.px-0.has-error
+            input(type='email' placeholder='Введите свою почту').form-input
+            p.help-block-error sdfsdfsdf
+        .row.align-items-baseline
+          .col-md-3
+            label Пароль
+          .col-md-9.px-0
+            input(type='password' placeholder='Введите свой пароль').form-input
+        .row.align-items-baseline
+          .col-md-3
+            label Промо-код
+          .col-md-9.px-0
+            input(type='text' placeholder='Введите промо-код').form-input
+            small.form-text *Промо-код обеспечивает 25% скидку на оплату invest
+        .row
+          .col
+            button(type='submit').default-btn Завершить

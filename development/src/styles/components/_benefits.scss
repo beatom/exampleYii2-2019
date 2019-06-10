@@ -1,0 +1,68 @@
+.benefits {
+  background: linear-gradient(309deg, rgba(0, 0, 0, .5) 0%, rgba(240, 255, 0, .5) 100%),
+              linear-gradient(180deg, rgba(236, 74, 152, 1) 0%, rgba(205, 82, 160, 1) 48%, rgba(111, 31, 164, 1) 100%);
+  background-blend-mode: soft-light;
+  padding: 80px 0 120px;
+  @include adapt_to("large-phone") {
+    padding: 50px 0;
+  }
+  &-body {
+    @extend .stretch;
+    padding-top: 70px;
+  }
+  &-item {
+    @extend .center-item;
+    flex: 1 0 33.3333%;
+    width: 33.3333%;
+    text-align: center;
+    padding: 70px 35px 15px;
+    min-height: 292px;
+    &:nth-child(odd) {
+      background: rgba(#551031, .5);
+    }
+    @include adapt_to('desktop') {
+      flex: 50%;
+      width: 50%;
+      &:nth-child(odd) {
+        background: transparent;
+      }
+      &:nth-child(1),
+      &:nth-child(4),
+      &:nth-child(5) {
+        background: rgba(#551031, .5);
+      }
+    }
+    @include adapt_to('large-phone') {
+      flex: 100%;
+      width: 100%;
+      min-height: auto;
+      padding: 25px 10px;
+      &:nth-child(1),
+      &:nth-child(4),
+      &:nth-child(5) {
+        background: transparent;
+      }
+      &:nth-child(odd) {
+        background: rgba(#551031, .5);
+      }
+    }
+    .benefit-ico {
+      width: auto;
+      height: 76px;
+      fill: $white;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 18px;
+      font-family: $font-exo-m;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      font-family: $font-exo-l;
+      margin-bottom: 0;
+    }
+  }
+}

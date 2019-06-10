@@ -1,0 +1,431 @@
+//.performance-boost {
+//  #animalchanger {
+//    &::before {
+//      background: url('../img/smash-fake.png') no-repeat center center/cover;
+//      transition: .5s;
+//      content: '';
+//      width: 100%;
+//      height: 100%;
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//      opacity: 1;
+//    }
+//  }
+//  &.thirty-pieces-titles {
+//    .loading {
+//      opacity: 1;
+//      background: url('../img/ir_logo_poly.svg') no-repeat;
+//      width: 520px;
+//      height: 215px;
+//      background-size: 100% 100%;
+//      display: block;
+//      margin: 0;
+//      left: calc(50% - 260px);
+//      top: -130px;
+//    }
+//  }
+//}
+//.performance-boost .level-one {
+//  transition-duration: 0.7s;
+//  .shard-wrap {
+//    opacity: 0;
+//    transition-duration: .3s;
+//    transform: translateY(10px);
+//    &:nth-child(1) .shard {
+//      opacity: 0;
+//      transition-duration: all 0.73s, background-color 0.3s;
+//    }
+//    &:nth-child(2) .shard {
+//      transition-duration: all 0.76s, background-color 0.3s;
+//    }
+//    &:nth-child(3) .shard {
+//      transition-duration: all 0.79s, background-color 0.3s;
+//    }
+//    &:nth-child(4) .shard {
+//      transition-duration: all 0.82s, background-color 0.3s;
+//    }
+//    &:nth-child(5) .shard {
+//      transition-duration: all 0.85s, background-color 0.3s;
+//    }
+//    &:nth-child(6) .shard {
+//      transition-duration: all 0.88s, background-color 0.3s;
+//    }
+//    &:nth-child(7) .shard {
+//      transition-duration: all 0.91s, background-color 0.3s;
+//    }
+//    &:nth-child(8) .shard {
+//      transition-duration: all 0.94s, background-color 0.3s;
+//    }
+//    &:nth-child(9) .shard {
+//      transition-duration: all 0.97s, background-color 0.3s;
+//    }
+//    &:nth-child(10) .shard {
+//      transition-duration: all 1s, background-color 0.3s;
+//    }
+//    &:nth-child(11) .shard {
+//      transition-duration: all 1.03s, background-color 0.3s;
+//    }
+//    &:nth-child(12) .shard {
+//      transition-duration: all 1.06s, background-color 0.3s;
+//    }
+//    &:nth-child(13) .shard {
+//      transition-duration: all 1.09s, background-color 0.3s;
+//    }
+//    &:nth-child(14) .shard {
+//      transition-duration: all 1.12s, background-color 0.3s;
+//    }
+//    &:nth-child(15) .shard {
+//      transition-duration: all 1.15s, background-color 0.3s;
+//    }
+//    &:nth-child(16) .shard {
+//      transition-duration: all 1.18s, background-color 0.3s;
+//    }
+//    &:nth-child(17) .shard {
+//      transition-duration: all 1.21s, background-color 0.3s;
+//    }
+//    &:nth-child(18) .shard {
+//      transition-duration: all 1.24s, background-color 0.3s;
+//    }
+//    &:nth-child(19) .shard {
+//      transition-duration: all 1.27s, background-color 0.3s;
+//    }
+//    &:nth-child(20) .shard {
+//      transition-duration: all 1.3s, background-color 0.3s;
+//    }
+//    &:nth-child(21) .shard {
+//      transition-duration: all 1.33s, background-color 0.3s;
+//    }
+//    &:nth-child(22) .shard {
+//      transition-duration: all 1.36s, background-color 0.3s;
+//    }
+//    &:nth-child(23) .shard {
+//      transition-duration: all 1.39s, background-color 0.3s;
+//    }
+//    &:nth-child(24) .shard {
+//      transition-duration: all 1.42s, background-color 0.3s;
+//    }
+//    &:nth-child(25) .shard {
+//      transition-duration: all 1.45s, background-color 0.3s;
+//    }
+//    &:nth-child(26) .shard {
+//      transition-duration: all 1.48s, background-color 0.3s;
+//    }
+//    &:nth-child(27) .shard {
+//      transition-duration: all 1.51s, background-color 0.3s;
+//    }
+//    &:nth-child(28) .shard {
+//      transition-duration: all 1.54s, background-color 0.3s;
+//    }
+//    &:nth-child(29) .shard {
+//      transition-duration: all 1.57s, background-color 0.3s;
+//    }
+//    &:nth-child(30) .shard {
+//      transition-duration: all 1.6s, background-color 0.3s;
+//    }
+//  }
+//}
+//
+//.performance-boost.thirty-pieces-titles {
+//  .intro-content, &.performance-boost .intro-content {
+//    pointer-events: auto;
+//  }
+//  .intro-content {
+//    p, .start-experience {
+//      opacity: 1;
+//    }
+//  }
+//  &.performance-boost .intro-content {
+//    p, .start-experience {
+//      opacity: 1;
+//    }
+//  }
+//  #animalchanger::before {
+//    opacity: 0;
+//  }
+//  .level-one, &.performance-boost .level-one {
+//    -webkit-transform: scale(0.54) translateY(-21%);
+//    -moz-transform: scale(0.54) translateY(-21%);
+//    -ms-transform: scale(0.54) translateY(-21%);
+//    -o-transform: scale(0.54) translateY(-21%);
+//    transform: scale(0.54) translateY(-21%);
+//    -webkit-transition: 1.4s cubic-bezier(0.62, 0.02, 0.34, 1);
+//    -moz-transition: 1.4s cubic-bezier(0.62, 0.02, 0.34, 1);
+//    transition: 1.4s cubic-bezier(0.62, 0.02, 0.34, 1);
+//  }
+//  .level-one .level-two, &.performance-boost .level-one .level-two {
+//    -webkit-transform: rotate(0deg);
+//    -moz-transform: rotate(0deg);
+//    -ms-transform: rotate(0deg);
+//    -o-transform: rotate(0deg);
+//    transform: rotate(0deg);
+//    -webkit-transition: 0.4s;
+//    -moz-transition: 0.4s;
+//    transition: 0.4s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(1) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(1) .shard {
+//    -webkit-transition: all 0.22s 0.43s cubic-bezier(1, 0, 0, 1), background-color 0.22s 0.43s;
+//    -moz-transition: all 0.22s 0.43s cubic-bezier(1, 0, 0, 1), background-color 0.22s 0.43s;
+//    transition: all 0.22s 0.43s cubic-bezier(1, 0, 0, 1), background-color 0.22s 0.43s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(2) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(2) .shard {
+//    -webkit-transition: all 0.28s 0.46s cubic-bezier(1, 0, 0, 1), background-color 0.28s 0.46s;
+//    -moz-transition: all 0.28s 0.46s cubic-bezier(1, 0, 0, 1), background-color 0.28s 0.46s;
+//    transition: all 0.28s 0.46s cubic-bezier(1, 0, 0, 1), background-color 0.28s 0.46s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(3) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(3) .shard {
+//    -webkit-transition: all 0.34s 0.49s cubic-bezier(1, 0, 0, 1), background-color 0.34s 0.49s;
+//    -moz-transition: all 0.34s 0.49s cubic-bezier(1, 0, 0, 1), background-color 0.34s 0.49s;
+//    transition: all 0.34s 0.49s cubic-bezier(1, 0, 0, 1), background-color 0.34s 0.49s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(4) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(4) .shard {
+//    -webkit-transition: all 0.4s 0.52s cubic-bezier(1, 0, 0, 1), background-color 0.4s 0.52s;
+//    -moz-transition: all 0.4s 0.52s cubic-bezier(1, 0, 0, 1), background-color 0.4s 0.52s;
+//    transition: all 0.4s 0.52s cubic-bezier(1, 0, 0, 1), background-color 0.4s 0.52s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(5) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(5) .shard {
+//    -webkit-transition: all 0.46s 0.55s cubic-bezier(1, 0, 0, 1), background-color 0.46s 0.55s;
+//    -moz-transition: all 0.46s 0.55s cubic-bezier(1, 0, 0, 1), background-color 0.46s 0.55s;
+//    transition: all 0.46s 0.55s cubic-bezier(1, 0, 0, 1), background-color 0.46s 0.55s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(6) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(6) .shard {
+//    -webkit-transition: all 0.52s 0.58s cubic-bezier(1, 0, 0, 1), background-color 0.52s 0.58s;
+//    -moz-transition: all 0.52s 0.58s cubic-bezier(1, 0, 0, 1), background-color 0.52s 0.58s;
+//    transition: all 0.52s 0.58s cubic-bezier(1, 0, 0, 1), background-color 0.52s 0.58s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(7) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(7) .shard {
+//    -webkit-transition: all 0.58s 0.61s cubic-bezier(1, 0, 0, 1), background-color 0.58s 0.61s;
+//    -moz-transition: all 0.58s 0.61s cubic-bezier(1, 0, 0, 1), background-color 0.58s 0.61s;
+//    transition: all 0.58s 0.61s cubic-bezier(1, 0, 0, 1), background-color 0.58s 0.61s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(8) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(8) .shard {
+//    -webkit-transition: all 0.64s 0.64s cubic-bezier(1, 0, 0, 1), background-color 0.64s 0.64s;
+//    -moz-transition: all 0.64s 0.64s cubic-bezier(1, 0, 0, 1), background-color 0.64s 0.64s;
+//    transition: all 0.64s 0.64s cubic-bezier(1, 0, 0, 1), background-color 0.64s 0.64s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(9) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(9) .shard {
+//    -webkit-transition: all 0.7s 0.67s cubic-bezier(1, 0, 0, 1), background-color 0.7s 0.67s;
+//    -moz-transition: all 0.7s 0.67s cubic-bezier(1, 0, 0, 1), background-color 0.7s 0.67s;
+//    transition: all 0.7s 0.67s cubic-bezier(1, 0, 0, 1), background-color 0.7s 0.67s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(10) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(10) .shard {
+//    -webkit-transition: all 0.76s 0.7s cubic-bezier(1, 0, 0, 1), background-color 0.76s 0.7s;
+//    -moz-transition: all 0.76s 0.7s cubic-bezier(1, 0, 0, 1), background-color 0.76s 0.7s;
+//    transition: all 0.76s 0.7s cubic-bezier(1, 0, 0, 1), background-color 0.76s 0.7s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(11) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(11) .shard {
+//    -webkit-transition: all 0.82s 0.73s cubic-bezier(1, 0, 0, 1), background-color 0.82s 0.73s;
+//    -moz-transition: all 0.82s 0.73s cubic-bezier(1, 0, 0, 1), background-color 0.82s 0.73s;
+//    transition: all 0.82s 0.73s cubic-bezier(1, 0, 0, 1), background-color 0.82s 0.73s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(12) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(12) .shard {
+//    -webkit-transition: all 0.88s 0.76s cubic-bezier(1, 0, 0, 1), background-color 0.88s 0.76s;
+//    -moz-transition: all 0.88s 0.76s cubic-bezier(1, 0, 0, 1), background-color 0.88s 0.76s;
+//    transition: all 0.88s 0.76s cubic-bezier(1, 0, 0, 1), background-color 0.88s 0.76s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(13) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(13) .shard {
+//    -webkit-transition: all 0.94s 0.79s cubic-bezier(1, 0, 0, 1), background-color 0.94s 0.79s;
+//    -moz-transition: all 0.94s 0.79s cubic-bezier(1, 0, 0, 1), background-color 0.94s 0.79s;
+//    transition: all 0.94s 0.79s cubic-bezier(1, 0, 0, 1), background-color 0.94s 0.79s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(14) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(14) .shard {
+//    -webkit-transition: all 1s 0.82s cubic-bezier(1, 0, 0, 1), background-color 1s 0.82s;
+//    -moz-transition: all 1s 0.82s cubic-bezier(1, 0, 0, 1), background-color 1s 0.82s;
+//    transition: all 1s 0.82s cubic-bezier(1, 0, 0, 1), background-color 1s 0.82s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(15) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(15) .shard {
+//    -webkit-transition: all 1.06s 0.85s cubic-bezier(1, 0, 0, 1), background-color 1.06s 0.85s;
+//    -moz-transition: all 1.06s 0.85s cubic-bezier(1, 0, 0, 1), background-color 1.06s 0.85s;
+//    transition: all 1.06s 0.85s cubic-bezier(1, 0, 0, 1), background-color 1.06s 0.85s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(16) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(16) .shard {
+//    -webkit-transition: all 1.12s 0.88s cubic-bezier(1, 0, 0, 1), background-color 1.12s 0.88s;
+//    -moz-transition: all 1.12s 0.88s cubic-bezier(1, 0, 0, 1), background-color 1.12s 0.88s;
+//    transition: all 1.12s 0.88s cubic-bezier(1, 0, 0, 1), background-color 1.12s 0.88s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(17) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(17) .shard {
+//    -webkit-transition: all 1.18s 0.91s cubic-bezier(1, 0, 0, 1), background-color 1.18s 0.91s;
+//    -moz-transition: all 1.18s 0.91s cubic-bezier(1, 0, 0, 1), background-color 1.18s 0.91s;
+//    transition: all 1.18s 0.91s cubic-bezier(1, 0, 0, 1), background-color 1.18s 0.91s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(18) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(18) .shard {
+//    -webkit-transition: all 1.24s 0.94s cubic-bezier(1, 0, 0, 1), background-color 1.24s 0.94s;
+//    -moz-transition: all 1.24s 0.94s cubic-bezier(1, 0, 0, 1), background-color 1.24s 0.94s;
+//    transition: all 1.24s 0.94s cubic-bezier(1, 0, 0, 1), background-color 1.24s 0.94s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(19) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(19) .shard {
+//    -webkit-transition: all 1.3s 0.97s cubic-bezier(1, 0, 0, 1), background-color 1.3s 0.97s;
+//    -moz-transition: all 1.3s 0.97s cubic-bezier(1, 0, 0, 1), background-color 1.3s 0.97s;
+//    transition: all 1.3s 0.97s cubic-bezier(1, 0, 0, 1), background-color 1.3s 0.97s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(20) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(20) .shard {
+//    -webkit-transition: all 1.36s 1s cubic-bezier(1, 0, 0, 1), background-color 1.36s 1s;
+//    -moz-transition: all 1.36s 1s cubic-bezier(1, 0, 0, 1), background-color 1.36s 1s;
+//    transition: all 1.36s 1s cubic-bezier(1, 0, 0, 1), background-color 1.36s 1s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(21) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(21) .shard {
+//    -webkit-transition: all 1.42s 1.03s cubic-bezier(1, 0, 0, 1), background-color 1.42s 1.03s;
+//    -moz-transition: all 1.42s 1.03s cubic-bezier(1, 0, 0, 1), background-color 1.42s 1.03s;
+//    transition: all 1.42s 1.03s cubic-bezier(1, 0, 0, 1), background-color 1.42s 1.03s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(22) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(22) .shard {
+//    -webkit-transition: all 1.48s 1.06s cubic-bezier(1, 0, 0, 1), background-color 1.48s 1.06s;
+//    -moz-transition: all 1.48s 1.06s cubic-bezier(1, 0, 0, 1), background-color 1.48s 1.06s;
+//    transition: all 1.48s 1.06s cubic-bezier(1, 0, 0, 1), background-color 1.48s 1.06s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(23) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(23) .shard {
+//    -webkit-transition: all 1.54s 1.09s cubic-bezier(1, 0, 0, 1), background-color 1.54s 1.09s;
+//    -moz-transition: all 1.54s 1.09s cubic-bezier(1, 0, 0, 1), background-color 1.54s 1.09s;
+//    transition: all 1.54s 1.09s cubic-bezier(1, 0, 0, 1), background-color 1.54s 1.09s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(24) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(24) .shard {
+//    -webkit-transition: all 1.6s 1.12s cubic-bezier(1, 0, 0, 1), background-color 1.6s 1.12s;
+//    -moz-transition: all 1.6s 1.12s cubic-bezier(1, 0, 0, 1), background-color 1.6s 1.12s;
+//    transition: all 1.6s 1.12s cubic-bezier(1, 0, 0, 1), background-color 1.6s 1.12s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(25) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(25) .shard {
+//    -webkit-transition: all 1.66s 1.15s cubic-bezier(1, 0, 0, 1), background-color 1.66s 1.15s;
+//    -moz-transition: all 1.66s 1.15s cubic-bezier(1, 0, 0, 1), background-color 1.66s 1.15s;
+//    transition: all 1.66s 1.15s cubic-bezier(1, 0, 0, 1), background-color 1.66s 1.15s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(26) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(26) .shard {
+//    -webkit-transition: all 1.72s 1.18s cubic-bezier(1, 0, 0, 1), background-color 1.72s 1.18s;
+//    -moz-transition: all 1.72s 1.18s cubic-bezier(1, 0, 0, 1), background-color 1.72s 1.18s;
+//    transition: all 1.72s 1.18s cubic-bezier(1, 0, 0, 1), background-color 1.72s 1.18s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(27) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(27) .shard {
+//    -webkit-transition: all 1.78s 1.21s cubic-bezier(1, 0, 0, 1), background-color 1.78s 1.21s;
+//    -moz-transition: all 1.78s 1.21s cubic-bezier(1, 0, 0, 1), background-color 1.78s 1.21s;
+//    transition: all 1.78s 1.21s cubic-bezier(1, 0, 0, 1), background-color 1.78s 1.21s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(28) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(28) .shard {
+//    transition: all 1.84s 1.24s cubic-bezier(1, 0, 0, 1), background-color 1.84s 1.24s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(29) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(29) .shard {
+//    transition: all 1.9s 1.27s cubic-bezier(1, 0, 0, 1), background-color 1.9s 1.27s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(30) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(30) .shard {
+//    transition: all 1.96s 1.3s cubic-bezier(1, 0, 0, 1), background-color 1.96s 1.3s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(1) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(1) .shard {
+//    -webkit-clip-path: polygon(6.838% 29.324%, 13.337% 80.752%, 4.838% 68.324%);
+//    background-color: #a60438;
+//    transition: 0.8s 0.2s;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(2) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(2) .shard {
+//    -webkit-clip-path: polygon(6.838% 29.324%, 19.637% 37.181%, 8.538% 42.895%);
+//    background-color: #970741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(3) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(3) .shard {
+//    -webkit-clip-path: polygon(6.838% 29.324%, 21.75% 30.5%, 19.9% 37.4%);
+//    background-color: #F6075A;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(4) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(4) .shard {
+//    -webkit-clip-path: polygon(21.65% 30.609%, 18.05% 62.181%, 14.85% 54.181%);
+//    background-color: #C80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(5) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(5) .shard {
+//    -webkit-clip-path: polygon(14.9% 54.2%, 18.2% 62.181%, 10.35% 57.609%);
+//    background-color: #970741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(6) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(6) .shard {
+//    -webkit-clip-path: polygon(21.75% 58.752%, 27.75% 25.609%, 23.35% 78.181%);
+//    background-color: #970741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(7) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(7) .shard {
+//    -webkit-clip-path: polygon(27.65% 25.609%, 28.35% 73.181%, 23.35% 78.181%);
+//    background-color: #C80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(8) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(8) .shard {
+//    -webkit-clip-path: polygon(31.45% 42.181%, 39.75% 72.038%, 32.85% 83.467%);
+//    background-color: #C80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(9) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(9) .shard {
+//    -webkit-clip-path: polygon(31.35% 42.4%, 45.65% 36.181%, 45.65% 45.895%);
+//    background-color: #F6075A;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(10) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(10) .shard {
+//    -webkit-clip-path: polygon(31.5% 42.4%, 39.2% 44.181%, 34.1% 52.181%);
+//    background-color: #970741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(11) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(11) .shard {
+//    -webkit-clip-path: polygon(34.2% 52.324%, 45.55% 55.467%, 36.3% 60.181%);
+//    background-color: #c80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(12) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(12) .shard {
+//    -webkit-clip-path: polygon(32.85% 83.324%, 39.65% 72.038%, 47.35% 73.181%);
+//    background-color: #8e0732;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(13) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(13) .shard {
+//    -webkit-clip-path: polygon(50.35% 14.609%, 56.05% 24.181%, 49.75% 79.181%);
+//    background-color: #c80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(14) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(14) .shard {
+//    -webkit-clip-path: polygon(50.45% 14.752%, 65.65% 26.324%, 55.95% 24.181%);
+//    background-color: #F6075A;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(15) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(15) .shard {
+//    -webkit-clip-path: polygon(49.65% 79.1%, 63.85% 75.3%, 68.85% 84.467%);
+//    background-color: #c80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(16) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(16) .shard {
+//    -webkit-clip-path: polygon(50.85% 68.895%, 57.45% 77.181%, 49.75% 79.181%);
+//    background-color: #8e0732;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(17) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(17) .shard {
+//    -webkit-clip-path: polygon(58.05% 70.467%, 60.55% 29.895%, 60.9% 66.752%);
+//    background-color: #d92451;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(18) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(18) .shard {
+//    -webkit-clip-path: polygon(60.45% 29.839%, 67% 39.839%, 60.8% 67%);
+//    background-color: #c80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(19) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(19) .shard {
+//    -webkit-clip-path: polygon(60.55% 29.982%, 74.55% 38.696%, 66.95% 39.982%);
+//    background-color: #F6075A;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(20) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(20) .shard {
+//    -webkit-clip-path: polygon(64.75% 49.6%, 73.15% 52.982%, 62.95% 56.839%);
+//    background-color: #d92451;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(21) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(21) .shard {
+//    -webkit-clip-path: polygon(63% 56.982%, 64.75% 66%, 60.65% 66.982%);
+//    background-color: #970741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(23) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(23) .shard {
+//    -webkit-clip-path: polygon(60.7% 66.9%, 72.45% 64.268%, 73.25% 73.696%);
+//    background-color: #c80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(22) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(22) .shard {
+//    -webkit-clip-path: polygon(60.65% 66.839%, 73.25% 73.696%, 58.05% 70.268%);
+//    background-color: #8e0732;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(24) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(24) .shard {
+//    -webkit-clip-path: polygon(77.55% 33.268%, 91.95% 28.982%, 92.55% 37.696%);
+//    background-color: #F6075A;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(25) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(25) .shard {
+//    -webkit-clip-path: polygon(77.55% 33.3%, 92.55% 37.8%, 88.95% 33.839%);
+//    background-color: #8e0732;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(26) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(26) .shard {
+//    -webkit-clip-path: polygon(77.45% 33.268%, 83.45% 50.268%, 78.25% 58.125%);
+//    background-color: #c80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(27) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(27) .shard {
+//    -webkit-clip-path: polygon(83.35% 50.268%, 92.65% 51.696%, 78.35% 57.982%);
+//    background-color: #d92451;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(28) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(28) .shard {
+//    -webkit-clip-path: polygon(86.6% 54.3%, 92.5% 51.65%, 95% 71.696%);
+//    background-color: #970741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(29) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(29) .shard {
+//    -webkit-clip-path: polygon(79.25% 68.125%, 91.85% 65.125%, 95.05% 71.554%);
+//    background-color: #c80741;
+//  }
+//  .level-one .level-two .shard-wrap:nth-child(30) .shard, &.performance-boost .level-one .level-two .shard-wrap:nth-child(30) .shard {
+//    -webkit-clip-path: polygon(79.35% 68.125%, 94.95% 71.554%, 80.55% 74.125%);
+//    background-color: #8e0732;
+//  }
+//}

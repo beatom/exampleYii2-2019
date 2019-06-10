@@ -1,0 +1,33 @@
+.last-profitability
+  .container
+    .row
+      .col
+        h2 Цифры говорят сами за себя
+        .row.flex-md-row.flex-column.justify-content-md-between
+          .number-info.wow.animated.fadeInLeft
+            .odometer-item
+              .odometer-item__value +
+              .odometer#odometer
+              .odometer-item__value %
+
+            p.counter-desription Доходность invest за последние 100 дней
+            .input-group
+              a(href='#').settings-account__btn Регистрация
+
+          .section-col
+            .section-number__pie
+              .section-number__img-wrapper.section-number__img-wrapper_first.wow.animated.fadeInUp(data-wow-delay='0s')
+                .choose-day-month
+                  .choose-day-month--title Выберите месяц/день
+              .section-number__img-wrapper.section-number__img-wrapper_second.wow.animated.fadeInUp(data-wow-delay='.7s')
+                .grafic-tabs
+                  ul#myTab.nav.nav-tabs(role='tablist')
+                    li.nav-item
+                      a#month-tab.nav-link.active(data-toggle='tab' href='#month' role='tab' aria-controls='home' aria-selected='true') месяцы
+                    li.nav-item
+                      a#days-tab.nav-link(data-toggle='tab' href='#days' role='tab' aria-controls='days' aria-selected='false') дни
+                  #myTabContent.tab-content
+                    #month.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='month-tab')
+                      .month-grafic#month-grafic
+                    #days.tab-pane.fade(role='tabpanel' aria-labelledby='days-tab')
+                      .month-grafic.days-grafic#days-grafic

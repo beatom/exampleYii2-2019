@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Settings</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/cabinet.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="left-side navbar navbar-expand-lg col flex-column"><a class="logo" href="#"><img src="./img/logo-black.png"></a>
+          <div class="navbar-toggler collapsed" data-toggle="collapse" data-target="#menu" aria-controls="menu"><span></span><span></span><span></span><span></span></div>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="menu-list">
+              <li class="active"><a href="personal.html">
+                  <div class="icon cabinet-ico"></div>Мой  кабинет</a></li>
+              <li><a href="deposit.html">
+                  <div class="icon deposit-ico"></div>Пополнить / Снять</a></li>
+              <li><a href="rates.html">
+                  <div class="notification-item">Новый результат
+                    <div class="notification"><span></span></div>
+                  </div>
+                  <div class="icon rates-ico"></div>Ставки invest</a></li>
+              <li><a href="cashback.html">
+                  <div class="icon cashback-ico"></div>Получить Кэшбэк</a></li>
+              <li><a href="promo.html">
+                  <div class="icon promo-ico"></div>Промо- материалы</a></li>
+              <li><a href="history.html">
+                  <div class="icon history-ico"></div>История  операций</a></li>
+              <li><a href="news-list.html">
+                  <div class="icon news-ico"></div>Новости</a></li>
+            </ul>
+          </div>
+        </nav>
+        <main class="main-items">
+          <div class="personal-header">
+            <ul class="personal-menu mr-md-auto d-none d-lg-flex">
+              <li><a href="#">Первый пункт</a></li>
+              <li><a href="#">Второй пункт</a></li>
+              <li><a href="#">Третий пункт</a></li>
+            </ul>
+            <div class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><img class="personal-avatar" src="./img/cabinet-avatar.jpg">Maria Lester
+                <div class="new_message_notification show_notification"><img src="./img/message-notification.png"><span>2</span></div></a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="settings.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#settings"></use>
+                  </svg>Управление аккаунтом</a><a class="dropdown-item" href="mail.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#mail"></use>
+                  </svg>Сообщения<span>2</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#out"></use>
+                  </svg>Выход</a></div>
+            </div>
+          </div>
+          <div class="content col pt-0">
+            <div class="settings">
+              <div class="settings-account">
+                <h4 class="settings-account__title">Мои данные</h4>
+                <form class="settings-account__form" action="#">
+                  <div class="input-group">
+                    <div class="form-group col px-0 max-w-auto">
+                      <label>Аватар</label>
+                      <div class="fileUpload">
+                        <div class="control-label">Загрузить файл</div>
+                        <input class="attachment_upload" name="logo" type="file">
+                        <input class="file-loader" placeholder="Файл не выбран" disabled="disabled">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-group col-lg-4 px-0 has-error">
+                      <label>Имя</label>
+                      <input class="form-control" type="text" placeholder="Введите имя">
+                      <p class="help-block-error">sdfsdfsdf</p>
+                    </div>
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Страна</label>
+                      <select class="form-control">
+                        <option>Выберите страну</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Фамилия</label>
+                      <input class="form-control" type="text" placeholder="Введите фамилию">
+                    </div>
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Город</label>
+                      <select class="form-control">
+                        <option>Выберите город</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-group align-items-baseline">
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Отчество</label>
+                      <input class="form-control" type="text" placeholder="Введите отчество">
+                    </div>
+                    <div class="form-group col-lg-4 px-0 mr-0">
+                      <label>Мой номер</label>
+                      <input class="form-control" type="tel" placeholder="+7XXXXXXXXXX" disabled="disabled">
+                    </div>
+                    <div class="form-group">
+                      <div class="change-phone">Изменить</div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <button class="settings-account__btn" type="submit">Сохранить</button>
+                  </div>
+                </form>
+              </div>
+              <div class="settings-verification">
+                <h4 class="settings-account__title">Верификация</h4>
+                <form class="settings-account__form" action="#">
+                  <div class="input-group">
+                    <div class="form-group col px-0 max-w-auto">
+                      <label>Документ</label>
+                      <div class="fileUpload">
+                        <div class="control-label">Загрузить файл</div>
+                        <input class="attachment_upload" id="logo-id" name="logo" type="file">
+                        <input class="file-loader" id="fakeUploadLogo" placeholder="Файл не выбран" disabled="disabled">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="info">
+                      <p>Скорее проходи верификацию. Для верифицированных у нас сниженные комиссии как на ввод, так и на вывод! Загрузите фотографию разворота паспорта в руках рядом с лицом, на фоне должен быть сайт компании invest.</p>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <button class="settings-account__btn" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+              <div class="settings-social">
+                <h4 class="settings-account__title">Мои социальные сети</h4>
+                <form class="settings-account__form" action="#">
+                  <div class="input-group">
+                    <div class="form-group col-lg-4 px-0">
+                      <label>VK</label>
+                      <input class="form-control" type="text" placeholder="https://vk.com/xxxxxx">
+                      <div class="input-group-append">
+                        <div class="vk icons"></div>
+                      </div>
+                    </div>
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Facebook</label>
+                      <input class="form-control" type="text" placeholder="https://facebook.com/xxxxxx">
+                      <div class="input-group-append">
+                        <div class="facebook icons"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Telegram</label>
+                      <input class="form-control" type="text" placeholder="@xxxxxx">
+                      <div class="input-group-append">
+                        <div class="telegram icons"></div>
+                      </div>
+                    </div>
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Instagram</label>
+                      <input class="form-control" type="text" placeholder="https://instagram.com/xxxxxx">
+                      <div class="input-group-append">
+                        <div class="instagram icons"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="info">
+                      <p>
+                        Они отображены в клиентском чате. Чем больше вы будете писать в чате, тем чаще к вам будут обращаться потенциальные клиенты и регистрироваться как ваши приглашенные!</p>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <button class="settings-account__btn" type="submit">Сохранить</button>
+                  </div>
+                </form>
+              </div>
+              <div class="settings-withdrawal">
+                <h4 class="settings-account__title">Реквизиты для вывода</h4>
+                <div class="input-group align-items-baseline">
+                  <div class="form-group col-lg-4 px-0">
+                    <div class="settings-withdrawal__item">
+                      <div class="settings-withdrawal__item--title">Выберите платёжную систему</div>
+                      <ul class="settings-withdrawal__item--list">
+                        <li><a class="settings-withdrawal__item--list__item" href="#">Яндекс.Деньги</a></li>
+                        <li><a class="settings-withdrawal__item--list__item" href="#">Карта</a></li>
+                        <li class="active"><a class="settings-withdrawal__item--list__item" href="#">Perfect money</a></li>
+                        <li><a class="settings-withdrawal__item--list__item" href="#">Payeer</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form-group col-lg-4 px-0 align-items-baseline">
+                    <input class="form-control sms-code" type="text" placeholder="Введите смс код">
+                    <button class="settings-account__btn mb-2" type="submit">Подтвердить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="settings-password">
+                <h4 class="settings-account__title">Пароль для входа</h4>
+                <form class="settings-account__form" action="#">
+                  <div class="input-group">
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Старый</label>
+                      <input class="form-control" type="password" placeholder="Введите старый пароль">
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Новый</label>
+                      <input class="form-control" type="password" placeholder="Введите новый пароль">
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-group col-lg-4 px-0">
+                      <label>Подтвердите</label>
+                      <input class="form-control" type="password" placeholder="Подтвердите новый пароль">
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <button class="settings-account__btn" type="submit">Обновить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./js/cabinet-libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

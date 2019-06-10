@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login page</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/registration.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg registration-header fixed-top">
+      <div class="container"><a class="navbar-brand" href="#">
+          <div class="logo"><img class="logo-img" src="/img/svg/logo-img.svg" alt="">
+            <div class="logo-text"></div>
+          </div></a>
+        <div class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"><span></span><span></span><span></span><span></span></div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="/">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="profitability.html">Доходность</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О Компании</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <!--.header-top__items-->
+          <!--  ul.header-top__social-->
+          <!--    li-->
+          <!--      a(href='#')-->
+          <!--        span.vk-->
+          <!--    li-->
+          <!--      a(href='#')-->
+          <!--        span.telegram-->
+          <!--    li-->
+          <!--      a(href='#')-->
+          <!--        span.youtube-->
+          <!--    li-->
+          <!--      a(href='#')-->
+          <!--        span.instagram-->
+          <!--a(href='#').header-top__personal.ml-auto Личный кабинет--><a class="header-top__personal header-top__avatar ml-auto" href="#"><img src="/img/cabinet-avatar.jpg" alt=""> Maria Lester</a>
+        </div>
+      </div>
+    </nav>
+    <div class="registration-form">
+      <div class="form-item">
+        <div class="form-item--title">Быстрый вход</div>
+        <ul class="qwick-enter">
+          <li><a class="link" href="#"><span>
+                <svg class="vk-ico">
+                  <use xlink:href="./img/sprites/sprite.svg#vk-ico"></use>
+                </svg></span>Вконтакте</a></li>
+          <li><a class="link facebook" href="#"><span>
+                <svg class="facebook-ico">
+                  <use xlink:href="./img/sprites/sprite.svg#facebook-ico"></use>
+                </svg></span>Facebook</a></li>
+        </ul>
+        <div class="registration step-one">
+          <div class="form-item--title">Авторизация</div>
+          <div class="col">
+            <div class="row align-items-baseline">
+              <div class="col-md-4">
+                <label>Логин</label>
+              </div>
+              <div class="col-md-8 px-0">
+                <input class="form-input" type="text" placeholder="Придумайте логин">
+              </div>
+            </div>
+            <div class="row align-items-baseline">
+              <div class="col-md-4">
+                <label>Пароль</label>
+              </div>
+              <div class="col-md-8 px-0 d-flex flex-column align-items-end has-error">
+                <input class="form-input" type="text" placeholder="Смс код">
+                <div class="help-block-error">Пароль неверный</div><a class="forgot-pass" href="#">Забыл пароль</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="default-btn" type="submit">Готово</button><a class="registration-link" href="registration.html">Регистрация</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

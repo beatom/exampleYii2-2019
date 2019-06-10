@@ -1,0 +1,24 @@
+extends ./extends/layout
+block variables
+	- var title = "invest - Home page"
+block styles
+	//link(rel="stylesheet" href="./styles/first-slide.css")
+	link(rel="stylesheet" href="./styles/main.css")
+block content
+	.outer-indent
+		include ./sections/first-screen
+		include ./sections/about-info
+		include ./sections/why-trusted
+		include ./components/how-work
+		include ./components/cashback
+		include ./components/service-evaluated
+		include ./components/last-news
+
+	include ./components/chat
+
+	.chat-notification--item
+		.chat-notification.wow.animated.fadeInUp(data-wow-delay='0.5s')
+			p Привет. Кто из какого города? Как давно сотрудничаете?
+
+		.chat-notification.next-message.wow.animated.fadeInUp(data-wow-delay='1s')
+			p Я из Перьми. Уже как 3й месяц

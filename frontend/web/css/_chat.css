@@ -1,0 +1,16 @@
+.chat-item__body--rating-items .ico {
+    width: 15px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+a.chat__delete {
+    color: red;
+}
+
+.chat_moderator_section {
+    display: none;
+}
+.chat__message:hover .chat_moderator_section {
+    display: block;
+}

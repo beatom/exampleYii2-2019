@@ -1,0 +1,90 @@
+.personal-purposeful.registration-form
+  .row
+    .col-md-8
+      .personal-purposeful__form
+        .personal-purposeful__title Для целеустремленных
+        .personal-purposeful__description Для целеустремленных invest дарит денежные бонусы, чтобы вы быстрее достигли желаемого
+        .personal-purposeful__get-balance Для начала нужно пополнить свой баланс.
+        form(action='#')
+          .form-group.has-error
+            label(for='wish') Напишите, то что вы хотите
+            input#wish.form-control(type='text' placeholder='Пример: Акустическая гитара')
+            p.help-error  kdjhgkdhfgkdk
+          .form-group
+            label(for='cash') Какой капитал для этого нужен?
+            input#cash.form-control(type='text' placeholder='Ориентировочная сумма')
+          .form-group
+            button(type='submit').default-btn Отправить
+          p Только поставив чёткую цель вы сможете ее достигнуть!
+
+    .col-lg-4
+      .personal-purposeful__load-img
+        .main-img-preview
+          .main-img-preview__item
+            img.thumbnail.img-preview(src='./img/load-img.jpg' alt='')
+        .form-group.field-userobjectives-image_file.required
+          .fileUpload
+            label.control-label(for='userobjectives-image_file') Загрузить файл
+            input(type='hidden' name='UserObjectives[image_file]' value='')
+            input#userobjectives-image_file.attachment_upload(type='file' name='UserObjectives[image_file]' style='display:none;' aria-required='true')
+          p.help-block.help-block-error Загрузите изображение
+
+
+
+
+.personal-purposeful
+  .row
+    .col
+      .personal-purposeful__step
+        .personal-purposeful__title Для целеустремленных
+        .personal-purposeful__wish Акустическая гитара Avzhezh ZG-103
+        .slider-range(data-start='90')
+        .d-flex.flex-wrap.progress-info-item
+          .ProgressBar.ProgressBar--animateAll(data-progress='100')
+            svg.ProgressBar-contentCircle(viewbox='0 0 200 200')
+              defs
+                lineargradient#gradient(x1='0%' y1='0%' x2='0%' y2='100%')
+                  stop(offset='0%' stop-color='rgb(255,96,0)' stop-opacity='1')
+                  stop(offset='100%' stop-color='rgb(147,32,125)' stop-opacity='1')
+
+              circle.ProgressBar-background(transform='rotate(-90, 100, 100)' cx='100' cy='100' r='95')
+              circle.ProgressBar-circle(transform='rotate(-90, 100, 100)' cx='100' cy='100' r='95' stroke="url(#gradient)")
+              span.ProgressBar-percentage.ProgressBar-percentage--count 3 месяца
+                br
+                | 2 недели
+          .progress-info Ориентировочно осталось до достижения твоей цели
+        .info Почти половина!
+        p Треть от нужной суммы уже у вас. Ее можно потратить на текущие расходы, но гораздо лучше накопить всю нужную сумму и исполнить небольшую, но заветную мечту.
+          br
+          br
+          b Помните:
+          |  «Сначала мечты кажутся невозможными, затем — неправдоподобными, а потом — неизбежными»
+          | — так говорил Кристофер Рив, американский актер.
+          br
+          br
+          |Мечтайте, и вы обязательно достигнете цели!”
+
+    .col-lg-4
+      .personal-purposeful__load-img.loaded-img
+        .main-img-preview
+          .main-img-preview__item
+            img.img-preview(src='./img/load-img.jpg' alt='')
+        .form-group.field-userobjectives-image_file.required
+          .fileUpload(data-toggle="modal" data-target="#exampleModalCenter")
+            label.control-label(for='userobjectives-image_file') Загрузить файл
+            input(type='hidden' name='UserObjectives[image_file]' value='')
+            input#userobjectives-image_file.attachment_upload(type='file' name='UserObjectives[image_file]' style='display:none;' aria-required='true')
+          p.help-block.help-block-error Загрузите изображение
+
+
+#exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+  .modal-dialog.modal-change(role='document')
+    .modal-content
+      .modal-body
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          svg(xmlns='http://www.w3.org/2000/svg', width='13px', height='13px')
+            path(fill-rule='evenodd', d='M12.157,11.450 L11.450,12.157 L6.500,7.207 L1.550,12.157 L0.843,11.450 L5.793,6.500 L0.843,1.550 L1.550,0.843 L6.500,5.793 L11.450,0.843 L12.157,1.550 L7.207,6.500 L12.157,11.450 Z')
+        .change-item Вы точно хотите изменить цель? Текущая цель будет сброшена
+        .change-item__links
+          a(href='#').yes Да
+          a(href='#' data-dismiss='modal', aria-label='Close').no Нет

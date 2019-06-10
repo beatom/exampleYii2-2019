@@ -1,0 +1,144 @@
+.user {
+    padding: 5px;
+    box-shadow: 1px 1px 10px gray;
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.user > #text {
+    display: none;
+}
+
+.user > .avatar {
+    height: 60px;
+    width: 14%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user > .avatar > img {
+    height: 60px;
+    width: 60px;
+
+}
+
+.write-message {
+    float: right;
+}
+
+.last-message {
+    color: lightgrey;
+    height: 20px;
+    overflow: hidden;
+    display: block;
+    width: 380px;
+}
+
+.user > .info {
+    width: 85%;
+    display: inline-block;
+}
+
+#chat {
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid;
+}
+
+#chat .message {
+    display: table;
+    margin-bottom: 7px;
+    /*max-width: 70%;*/
+    clear: both;
+    width: 70%;
+}
+
+#chat .message .text {
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px gray;
+    display: block;
+    word-break: break-all;
+    text-align: left;
+}
+
+#chat .message.right {
+    float: right;
+
+}
+
+#chat .message .time {
+    display: inline-flex;
+    color: gainsboro;
+    margin-left: 5px;
+}
+
+#chat .message.right .time {
+    margin-right: 5px;
+}
+
+.current-chat {
+    background: aliceblue;
+}
+
+.search-chat {
+    min-height: 70px;
+}
+
+.time-badge {
+    text-align: center;
+    color: lightgrey;
+    clear: both;
+}
+
+.row.message .col-md-3 {
+    width: 55px;
+}
+
+.row.message .col-md-8 {
+    text-align: right;
+    width: auto;
+}
+
+.row.message.right .col-md-3, .row.message.right .col-md-8 {
+    float: right;
+    display: inherit;
+    padding-left: 0px;
+}
+
+
+img.avatar {
+    height: auto;
+    width: 40px;
+}
+
+#more-messages {
+    cursor: pointer;
+}
+
+.companion-id {
+color: gray;
+}
+
+.row.message .col-md-12 {
+
+    display: inherit;
+    text-align: right;
+    width: auto;
+}
+
+.row.message.right .col-md-12 {
+    float: right;
+}
+
+.row.message.right .col-md-12 .text{
+    cursor: pointer;
+}
+
+.row.message.right .col-md-12 .selected_message{
+   background-color: aliceblue;
+}
+

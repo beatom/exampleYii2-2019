@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Profitability page</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg registration-header fixed-top">
+      <div class="container"><a class="navbar-brand" href="#">
+          <div class="logo"><img class="logo-img" src="/img/svg/logo-img.svg" alt="">
+            <div class="logo-text"></div>
+          </div></a>
+        <div class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"><span></span><span></span><span></span><span></span></div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="/">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="profitability.html">Доходность</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О Компании</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <!--.header-top__items-->
+          <!--  ul.header-top__social-->
+          <!--    li-->
+          <!--      a(href='#')-->
+          <!--        span.vk-->
+          <!--    li-->
+          <!--      a(href='#')-->
+          <!--        span.telegram-->
+          <!--    li-->
+          <!--      a(href='#')-->
+          <!--        span.youtube-->
+          <!--    li-->
+          <!--      a(href='#')-->
+          <!--        span.instagram-->
+          <!--a(href='#').header-top__personal.ml-auto Личный кабинет--><a class="header-top__personal header-top__avatar ml-auto" href="#"><img src="/img/cabinet-avatar.jpg" alt=""> Maria Lester</a>
+        </div>
+      </div>
+    </nav>
+    <div class="outer-indent">
+      <div class="last-profitability">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Цифры говорят сами за себя</h2>
+              <div class="row flex-md-row flex-column justify-content-md-between">
+                <div class="number-info wow animated fadeInLeft">
+                  <div class="odometer-item">
+                    <div class="odometer-item__value">+</div>
+                    <div class="odometer" id="odometer"></div>
+                    <div class="odometer-item__value">%</div>
+                  </div>
+                  <p class="counter-desription">Доходность invest за последние 100 дней</p>
+                  <div class="input-group"><a class="settings-account__btn" href="#">Регистрация</a></div>
+                </div>
+                <div class="section-col">
+                  <div class="section-number__pie">
+                    <div class="section-number__img-wrapper section-number__img-wrapper_first wow animated fadeInUp" data-wow-delay="0s">
+                      <div class="choose-day-month">
+                        <div class="choose-day-month--title">Выберите месяц/день</div>
+                      </div>
+                    </div>
+                    <div class="section-number__img-wrapper section-number__img-wrapper_second wow animated fadeInUp" data-wow-delay=".7s">
+                      <div class="grafic-tabs">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item"><a class="nav-link active" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="home" aria-selected="true">месяцы</a></li>
+                          <li class="nav-item"><a class="nav-link" id="days-tab" data-toggle="tab" href="#days" role="tab" aria-controls="days" aria-selected="false">дни</a></li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="month" role="tabpanel" aria-labelledby="month-tab">
+                            <div class="month-grafic" id="month-grafic"></div>
+                          </div>
+                          <div class="tab-pane fade" id="days" role="tabpanel" aria-labelledby="days-tab">
+                            <div class="month-grafic days-grafic" id="days-grafic"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="management-history">
+        <div class="container">
+          <div class="row">
+            <div class="col wow animated fadeIn">
+              <h2>История управления</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col">
+              <div class="personal-history wow animated fadeInLeft">
+                <div class="personal-history__top">
+                  <div class="personal-history__top--select-date">Выберите дату</div>
+                  <div class="personal-history__top--slider">
+                    <div class="slider single-item slider-for">
+                      <div>
+                        <div class="date-item">Январь 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Февраль 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Март 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Апрель 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Май 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Июнь 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Июль 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Август 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Сентябрь 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Октябрь 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Ноябрь 2019</div>
+                      </div>
+                      <div>
+                        <div class="date-item">Декабрь 2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="personal-history__item">
+                  <div class="slider-nav">
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="management-history__table">
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Пн</th>
+                                                  <th scope="col">Вт</th>
+                                                  <th scope="col">Ср</th>
+                                                  <th scope="col">Чт</th>
+                                                  <th scope="col">Пт</th>
+                                                  <th class="day-off" scope="col">Сб</th>
+                                                  <th class="day-off" scope="col">Вс</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td class="active">
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <div class="table-item plus">+0,18%<span>31 дек</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+5,12%<span>1</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item minus">-0,22%<span>2</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item plus">+4,48%<span>3</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+1,12%<span>4</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">-1,25%<span>5</span></div>
+                                                  </td>
+                                                  <td>
+                                                    <div class="table-item next-month">+7,12%<span>6</span></div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="rates-table wow animated fadeInRight">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Событие</th>
+                        <th scope="col">% от банка</th>
+                        <th scope="col">Ставка</th>
+                        <th scope="col">Коэффициент</th>
+                        <th scope="col">Результат</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Футбол. Астон Вилла - Ливерпуль</td>
+                        <td>2%</td>
+                        <td>ТБ(3.5)</td>
+                        <td>3.17</td>
+                        <td>
+                          <div class="result up">
+                            <div class="result-position"></div><a class="result-title" href="#">FREE
+                              <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Футбол. Арсенал - Манчестер сити</td>
+                        <td>0.5%</td>
+                        <td>Х1</td>
+                        <td>2.09</td>
+                        <td>
+                          <div class="result down">
+                            <div class="result-position"></div><a class="result-title" href="#">FREE
+                              <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Футбол. Астон Вилла - Ливерпуль</td>
+                        <td>2%</td>
+                        <td>ТБ(3.5)</td>
+                        <td>3.17</td>
+                        <td>
+                          <div class="result equal">
+                            <div class="result-position"></div><a class="result-title" href="#">FREE
+                              <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Футбол. Астон Вилла - Ливерпуль</td>
+                        <td>2%</td>
+                        <td>ТБ(3.5)</td>
+                        <td>3.17</td>
+                        <td>
+                          <div class="result up">
+                            <div class="result-position"></div><a class="result-title" href="#">FREE
+                              <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Футбол. Астон Вилла - Ливерпуль</td>
+                        <td>2%</td>
+                        <td>ТБ(3.5)</td>
+                        <td>3.17</td>
+                        <td>
+                          <div class="result up">
+                            <div class="result-position"></div><a class="result-title" href="#">FREE
+                              <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Футбол. Арсенал - Манчестер сити</td>
+                        <td>0.5%</td>
+                        <td>Х1</td>
+                        <td>2.09</td>
+                        <td>
+                          <div class="result down">
+                            <div class="result-position"></div><a class="result-title" href="#">FREE
+                              <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Футбол. Астон Вилла - Ливерпуль</td>
+                        <td>2%</td>
+                        <td>ТБ(3.5)</td>
+                        <td>3.17</td>
+                        <td>
+                          <div class="result equal">
+                            <div class="result-position"></div><a class="result-title" href="#">FREE
+                              <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Футбол. Астон Вилла - Ливерпуль</td>
+                        <td>2%</td>
+                        <td>ТБ(3.5)</td>
+                        <td>3.17</td>
+                        <td>
+                          <div class="result up">
+                            <div class="result-position"></div><a class="result-title" href="#">FREE
+                              <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="registration">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex align-items-center flex-lg-row flex-column"><img class="registration-img wow animated fadeInLeft" src="/img/about-img.png" alt="">
+              <div class="registration-info wow animated fadeInRight">
+                <h4>Хотите узнать на какие события invest распределила деньги сегодня?<br>Просто пройдите регистрацию!</h4><a class="settings-account__btn" href="#">Зарегистрироваться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col">
+            <div class="footer-logo"><img class="logo-img" src="/img/svg/logo-img.svg" alt="">
+              <svg class="logo-text">
+                <use xlink:href="./img/sprites/sprite.svg#logo-text"></use>
+              </svg>
+            </div>
+            <ul class="footer__contact-info">
+              <li><span class="phone"></span>8 800 535-55-55</li>
+              <li><a href="mailto:info@invest@gmail.com"><span class="mail"></span>info@invest@gmail.com</a></li>
+            </ul>
+            <div class="copy">&copy; 2019 invest. Все права защищены</div>
+          </div>
+          <div class="col d-flex align-items-end">
+            <ul class="footer__menu">
+              <li><a href="about.html">О Компании</a></li>
+              <li><a href="#">Команда</a></li>
+              <li><a href="#">Документация</a></li>
+              <li><a href="#">Доходность</a></li>
+              <li><a href="#">Преимущества</a></li>
+              <li><a href="#">Почему мы?</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Вопрос/ответ</a></li>
+              <li><a href="news-list.html">Новости</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/WebGL.js"></script>
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <script>
+      <!--month grafic-->
+      Highcharts.chart('month-grafic', {
+        chart: {
+          styledMode: true,
+          type: 'area',
+          style: {
+            fontFamily: 'serif'
+          }
+        },
+        title: {
+          text: '',
+        },
+        yAxis: {
+          title: {
+            text: ''
+          },
+          labels: {
+            format: '{value}%'
+          },
+        },
+        xAxis: {
+          categories: ['Янв', 'Февр', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сен', 'Окт', 'Нояб', 'Дек'],
+          title: {
+            enabled: false
+          }
+        },
+        tooltip: {
+          valueSuffix: '%',
+          split: false,
+          borderRadius: 30,
+          distance: 30,
+          padding: 10,
+          shared: true
+        },
+        legend: {
+          enabled: false
+        },
+        defs: {
+          gradient0: {
+            tagName: 'linearGradient',
+            id: 'gradient-0',
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1,
+            children: [{
+              tagName: 'stop',
+              offset: 0
+            }, {
+              tagName: 'stop',
+              offset: 1
+            }]
+          },
+          gradient1: {
+            tagName: 'linearGradient',
+            id: 'gradient-1',
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1,
+            children: [{
+              tagName: 'stop',
+              offset: 0
+            }, {
+              tagName: 'stop',
+              offset: 1
+            }]
+          }
+        },
+        series: [{
+          name: 'Доход',
+          marker: {
+            symbol: 'url(../img/grafic-ico.png)',
+            width: 20,
+            height: 20
+          },
+          data: [25, 56, 52, 75, 35, 80, 60],
+          dashStyle: 'longdash'
+        }],
+        responsive: {
+          rules: [{
+            condition: {
+              maxWidth: 930
+            },
+            chartOptions: {
+              legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom'
+              }
+            }
+          }]
+        }
+      });
+      
+      <!-- days grafic -->
+      Highcharts.chart('days-grafic', {
+        chart: {
+          styledMode: true,
+          type: 'area'
+        },
+        title: {
+          text: '',
+        },
+        yAxis: {
+          title: {
+            text: ''
+          },
+          labels: {
+            format: '{value}%'
+          },
+        },
+        xAxis: {
+          categories: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+          title: {
+            enabled: false
+          }
+        },
+        tooltip: {
+          valueSuffix: '%',
+          split: false,
+          borderRadius: 30,
+          distance: 30,
+          padding: 10,
+          shared: true
+        },
+        legend: {
+          enabled: false
+        },
+        defs: {
+          gradient0: {
+            tagName: 'linearGradient',
+            id: 'gradient-2',
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1,
+            children: [{
+              tagName: 'stop',
+              offset: 0
+            }, {
+              tagName: 'stop',
+              offset: 1
+            }]
+          },
+          gradient1: {
+            tagName: 'linearGradient',
+            id: 'gradient-3',
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1,
+            children: [{
+              tagName: 'stop',
+              offset: 0
+            }, {
+              tagName: 'stop',
+              offset: 1
+            }]
+          }
+        },
+        series: [{
+          name: 'Доход',
+          marker: {
+            symbol: 'url(../img/grafic-ico.png)',
+            width: 20,
+            height: 20
+          },
+          data: [25, 56, 52, 75, 35, 80, 60],
+          dashStyle: 'longdash'
+        }],
+        responsive: {
+          rules: [{
+            condition: {
+              maxWidth: 930
+            },
+            chartOptions: {
+              legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom'
+              }
+            }
+          }]
+        }
+      });
+    </script>
+  </body>
+</html>

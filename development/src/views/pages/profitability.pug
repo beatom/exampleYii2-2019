@@ -1,0 +1,205 @@
+extends ../extends/layout
+block variables
+  - var title = "Profitability page";
+
+block content
+  .outer-indent
+    include ../sections/last-profitability
+    include ../sections/management-history
+    include ../sections/registration
+
+block scripts
+  script(src="./js/jquery.min.js")
+  script(src='./js/popper.min.js')
+  script(src="./js/three.min.js")
+  script(src="./js/WebGL.js")
+  script(src="./js/libs.min.js")
+  script(src="./js/main.min.js")
+
+  script.
+    <!--month grafic-->
+    Highcharts.chart('month-grafic', {
+      chart: {
+        styledMode: true,
+        type: 'area',
+        style: {
+          fontFamily: 'serif'
+        }
+      },
+      title: {
+        text: '',
+      },
+      yAxis: {
+        title: {
+          text: ''
+        },
+        labels: {
+          format: '{value}%'
+        },
+      },
+      xAxis: {
+        categories: ['Янв', 'Февр', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сен', 'Окт', 'Нояб', 'Дек'],
+        title: {
+          enabled: false
+        }
+      },
+      tooltip: {
+        valueSuffix: '%',
+        split: false,
+        borderRadius: 30,
+        distance: 30,
+        padding: 10,
+        shared: true
+      },
+      legend: {
+        enabled: false
+      },
+      defs: {
+        gradient0: {
+          tagName: 'linearGradient',
+          id: 'gradient-0',
+          x1: 0,
+          y1: 0,
+          x2: 0,
+          y2: 1,
+          children: [{
+            tagName: 'stop',
+            offset: 0
+          }, {
+            tagName: 'stop',
+            offset: 1
+          }]
+        },
+        gradient1: {
+          tagName: 'linearGradient',
+          id: 'gradient-1',
+          x1: 0,
+          y1: 0,
+          x2: 0,
+          y2: 1,
+          children: [{
+            tagName: 'stop',
+            offset: 0
+          }, {
+            tagName: 'stop',
+            offset: 1
+          }]
+        }
+      },
+      series: [{
+        name: 'Доход',
+        marker: {
+          symbol: 'url(../img/grafic-ico.png)',
+          width: 20,
+          height: 20
+        },
+        data: [25, 56, 52, 75, 35, 80, 60],
+        dashStyle: 'longdash'
+      }],
+      responsive: {
+        rules: [{
+          condition: {
+            maxWidth: 930
+          },
+          chartOptions: {
+            legend: {
+              layout: 'horizontal',
+              align: 'center',
+              verticalAlign: 'bottom'
+            }
+          }
+        }]
+      }
+    });
+
+    <!-- days grafic -->
+    Highcharts.chart('days-grafic', {
+      chart: {
+        styledMode: true,
+        type: 'area'
+      },
+      title: {
+        text: '',
+      },
+      yAxis: {
+        title: {
+          text: ''
+        },
+        labels: {
+          format: '{value}%'
+        },
+      },
+      xAxis: {
+        categories: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+        title: {
+          enabled: false
+        }
+      },
+      tooltip: {
+        valueSuffix: '%',
+        split: false,
+        borderRadius: 30,
+        distance: 30,
+        padding: 10,
+        shared: true
+      },
+      legend: {
+        enabled: false
+      },
+      defs: {
+        gradient0: {
+          tagName: 'linearGradient',
+          id: 'gradient-2',
+          x1: 0,
+          y1: 0,
+          x2: 0,
+          y2: 1,
+          children: [{
+            tagName: 'stop',
+            offset: 0
+          }, {
+            tagName: 'stop',
+            offset: 1
+          }]
+        },
+        gradient1: {
+          tagName: 'linearGradient',
+          id: 'gradient-3',
+          x1: 0,
+          y1: 0,
+          x2: 0,
+          y2: 1,
+          children: [{
+            tagName: 'stop',
+            offset: 0
+          }, {
+            tagName: 'stop',
+            offset: 1
+          }]
+        }
+      },
+      series: [{
+        name: 'Доход',
+        marker: {
+          symbol: 'url(../img/grafic-ico.png)',
+          width: 20,
+          height: 20
+        },
+        data: [25, 56, 52, 75, 35, 80, 60],
+        dashStyle: 'longdash'
+      }],
+      responsive: {
+        rules: [{
+          condition: {
+            maxWidth: 930
+          },
+          chartOptions: {
+            legend: {
+              layout: 'horizontal',
+              align: 'center',
+              verticalAlign: 'bottom'
+            }
+          }
+        }]
+      }
+    });

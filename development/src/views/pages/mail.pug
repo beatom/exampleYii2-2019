@@ -1,0 +1,14 @@
+extends ../extends/personal
+block variables
+  - var title = "Messages"
+
+block content
+  .container-fluid
+    .row
+      include ../includes/personal-aside
+      main.main-items
+        include ../includes/personal-header
+        .content.col.pt-0
+          include ../sections/messages
+
+

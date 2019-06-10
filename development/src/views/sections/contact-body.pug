@@ -1,0 +1,59 @@
+.contact-body
+  .container
+    .contact-item
+      .contact-info
+        h2.contact-info__title Контакты
+        .contact-info__work-time
+          .contact-info__work-time--title Операторская служба
+          ul.contact-info__work-time--list
+            li
+              .icons.phone
+              .phone-number 8 800 123-24-23
+            li
+              .icons.time
+              | ежедневно, с 10-00 до 20-00 МСК
+
+          .contact-info__work-time--title Клиентская служба поддержки
+          ul.contact-info__work-time--list
+            li
+              .icons.email
+              a(href='mailto:clients@invest.biz') clients@invest.biz
+            li
+              .icons.time
+              | ежедневно, с 10-00 до 20-00 МСК
+
+          .contact-info__work-time--title Техническая поддержка
+          ul.contact-info__work-time--list
+            li
+              .icons.email
+              a(href='mailto:support@invest.biz') support@invest.biz
+            li
+              .icons.time
+              | ежедневно, с 10-00 до 20-00 МСК
+
+      .contact-support__item
+        mixin contact-item
+          .contact-support__item--worker-info.wow.animated.fadeIn(data-wow-delay='0.2s')
+            .contact-support__item--worker-info__avatar
+              img(src='/img/contact-team-1.png').rounded-circle
+            .contact-support__item--worker-info__name
+              | Александр Смыслов
+              span Ведущий аналитик
+
+            ul.contact-support__item--worker-info__work-time
+              li
+                .icons.mail
+                a(href='mailto:aleksmaslow@invest.biz') aleksmaslow@invest.biz
+              li
+                .icons.vk
+                a(href='#') vk.com/aleksmaslow
+              li
+                .icons.telegram
+                a(href='#') @aleksmaslow
+              li
+                .icons.skype
+                a(href='skype:AleksSmislov') live: AleksSmislov
+
+        +contact-item
+        +contact-item
+        +contact-item

@@ -1,0 +1,165 @@
+.modal-change {
+  .modal-content {
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.5);
+    width: 217px;
+    margin: auto;
+    border: none;
+  }
+  .modal-body {
+    padding: 25px 15px 20px;
+  }
+  .change-item {
+    font-size: 14px;
+    color: #888888;
+    font-family: $font-exo;
+    line-height: normal;
+    margin-bottom: 15px;
+    text-align: center;
+    &__links {
+      display: flex;
+      justify-content: center;
+      a {
+        font-size: 16px;
+        color: #888888;
+        font-family: $font-exo;
+        line-height: normal;
+        margin: 0 15px;
+      }
+      .yes {
+        text-decoration: underline;
+        color: #4c70bb;
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    fill: $white;
+  }
+}
+
+.modal-dialog.dropBonus {
+  max-width: 100%;
+  .modal-content {
+    margin: auto;
+    max-width: 862px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 40px 10px 70px;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    color: #222;
+    line-height: normal;
+    width: 100%;
+  }
+  .modal-steps--item-icon {
+    background: none;
+  }
+  .modal-steps--item-text {
+    font-size: 14px;
+    font-family: $font;
+    text-align: center;
+  }
+  .settings {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    &-account__btn {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .form-group {
+      max-width: 100%;
+      width: 100%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    .input-group {
+      margin: auto 0 0 0;
+    }
+  }
+  .modal-steps {
+    &--flex {
+      max-width: 680px;
+    }
+    &--item {
+      width: 46%;
+      display: flex;
+      flex-direction: column;
+    }
+    &--btn {
+      padding: 22px 17px;
+    }
+  }
+  .bonus-text {
+    width: 80%;
+    margin: 10px auto 0;
+    font-size: 16px;
+    font-family: Roboto;
+  }
+  .conditions-list {
+    margin-top: 25px;
+    height: auto;
+    .input-group {
+      align-items: flex-start;
+      max-width: 700px;
+      flex-direction: column;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: left;
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          line-height: 18px;
+          font-family: $font-exo-l;
+          &::before {
+            content: '';
+            margin-right: 10px;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            background: #2d2d2d;
+          }
+
+        }
+      }
+    }
+    .list-title {
+      font-family: $font-exo-m;
+      font-size: 14px;
+      line-height: 18px;
+      color: #222222;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-dialog.dropBonus .modal-steps--item {
+    width: 100%;
+  }
+}

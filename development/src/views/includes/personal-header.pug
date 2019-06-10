@@ -1,0 +1,27 @@
+.personal-header
+  ul.personal-menu.mr-md-auto.d-none.d-lg-flex
+    li
+      a(href='#') Первый пункт
+    li
+      a(href='#') Второй пункт
+    li
+      a(href='#') Третий пункт
+
+  .dropdown
+    a.dropdown-toggle(href='#' role='button' data-toggle='dropdown')
+      img(src='./img/cabinet-avatar.jpg').personal-avatar
+      | Maria Lester
+      .new_message_notification.show_notification
+        img(src='./img/message-notification.png')
+        span 2
+    .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuLink')
+      a.dropdown-item(href='settings.html')
+        +sprite("icon", "settings")
+        |Управление аккаунтом
+      a.dropdown-item(href='mail.html')
+        +sprite("icon", "mail")
+        |Сообщения
+        span 2
+      a.dropdown-item(href='#')
+        +sprite("icon", "out")
+        |Выход

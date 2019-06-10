@@ -1,0 +1,107 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/nouislider/distribute/nouislider";
+@import "../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/extends";
+@import "utils/fonts";
+@import "sections/left-side";
+@import "includes/personal-header";
+@import "components/progress-circle";
+@import "components/dropdown";
+@import "sections/personal-balance";
+@import "sections/personal-history";
+@import "components/slick-slider";
+@import "sections/personal-purposeful";
+@import "sections/cashback-balance";
+@import "sections/invitations";
+@import "sections/growth";
+@import "sections/rates";
+@import "sections/settings";
+@import "sections/deposit";
+@import "sections/deposit-payments-form";
+@import "sections/promo";
+@import "sections/history";
+@import "sections/messages";
+@import "components/chat-news";
+@import "components/chat";
+@import "components/modal-changes";
+.main-items {
+  margin-left: 120px;
+  width: calc(100% - 120px);
+  min-height: 100vh;
+  background: #eef4f6;
+  @include adapt_to("desktop") {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.fileUpload label.control-label {
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+  background-color: rgb(234, 247, 247);
+  border: 1px solid rgb(201, 214, 216);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: normal;
+  font-family: $font-exo;
+  color: #222222;
+  padding: 11px 15px;
+  max-width: 185px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .03s ease;
+  &:hover {
+    background: rgb(201, 214, 216);
+  }
+}
+
+.fileUpload .attachment_upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 33px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.img-preview {
+  max-width: 100%;
+}
+
+.content {
+  margin-top: 80px;
+  padding: 20px;
+  @include adapt_to('large-phone') {
+    padding: 0;
+    .row {
+      margin: 0;
+    }
+    .col-lg-7,
+    .col-lg-5,
+    .col,
+    .col-lg-4 {
+      padding: 0 !important;
+    }
+  }
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}
+.help-error, .help-block-error {
+  display: none;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+  margin: 0 0 0 auto;
+}
+
+.slick-slide:focus {
+  outline: none;
+}

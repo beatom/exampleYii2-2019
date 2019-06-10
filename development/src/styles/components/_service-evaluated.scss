@@ -1,0 +1,48 @@
+.service-evaluated {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  text-align: center;
+  position: relative;
+  background: $white;
+  color: #222222;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: '';
+    background: url('../img/svg/evaluated-bg.svg') no-repeat right;
+    position: absolute;
+    width: 742px;
+    height: 100%;
+    top: 0;
+    background-size: cover;
+  }
+  &::before {
+    left: -125px;
+    transform: scale(-1, 1);
+
+  }
+  &::after {
+    right: -125px;
+    @include adapt_to('large-phone') {
+      display: none;
+    }
+  }
+  h2 {
+    @extend .position;
+    max-width: 500px;
+    margin: auto auto 20px;
+    font-family: $font-exo-s;
+  }
+  p {
+    @extend .position;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: $font-exo-l;
+    margin-bottom: 40px;
+  }
+  .default-btn {
+    @extend .position;
+    padding: 22px 52px;
+    display: table;
+  }
+}

@@ -1,0 +1,13 @@
+extends ../extends/personal
+block variables
+  - var title = "History"
+
+block content
+  .container-fluid
+    .row
+      include ../includes/personal-aside
+      main.main-items
+        include ../includes/personal-header
+        .content.col.pt-0
+          include ../sections/history-operations
+

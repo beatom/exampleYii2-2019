@@ -1,0 +1,34 @@
+.registration-form
+  .form-item
+    .form-item--title Быстрый вход
+    ul.qwick-enter
+      li
+        a(href='#').link
+          span
+            +sprite("vk-ico", "vk-ico")
+          |Вконтакте
+      li
+        a(href='#').link.facebook
+          span
+            +sprite("facebook-ico", "facebook-ico")
+          |Facebook
+    .registration.step-one
+      .form-item--title Авторизация
+      .col
+        .row.align-items-baseline
+          .col-md-4
+            label Логин
+          .col-md-8.px-0
+            input(type='text' placeholder='Придумайте логин').form-input
+        .row.align-items-baseline
+          .col-md-4
+            label Пароль
+          .col-md-8.px-0.d-flex.flex-column.align-items-end.has-error
+              input(type='text' placeholder='Смс код').form-input
+              .help-block-error Пароль неверный
+              a(href='#').forgot-pass Забыл пароль
+        .row
+          .col
+            button(type='submit').default-btn Готово
+
+            a(href='registration.html').registration-link Регистрация

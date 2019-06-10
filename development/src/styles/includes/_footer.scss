@@ -1,0 +1,99 @@
+.footer {
+  background: $default;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 95px;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &-logo {
+    width: 159px;
+    height: 55px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    .logo-img {
+      width: 58px;
+      height: auto;
+    }
+    .logo-text {
+      width: 86px;
+      height: 24px;
+      fill: $white;
+      margin-left: 15px;
+    }
+  }
+  &__contact-info {
+    li {
+      font-size: 16px;
+      line-height: 26px;
+      font-family: $font-exo-l;
+    }
+    li, a {
+      display: flex;
+      align-items: center;
+      color: rgba($white, .77);
+    }
+    a {
+    }
+    .phone {
+      background: url('../img/phone-ico.png') no-repeat right;
+      height: 20px;
+      opacity: .77;
+    }
+    .mail {
+      background: url('../img/mail-ico.png') no-repeat;
+      height: 15px;
+      opacity: .77;
+    }
+    span {
+      width: 33px;
+      margin-right: 10px;
+      display: flex;
+    }
+  }
+  .copy {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: $font-exo-l;
+    padding-top: 5px;
+    color: rgba($white, .77);
+  }
+  &__menu {
+    column-count: 3;
+    width: 100%;
+    column-width: 150px;
+    a {
+      position: relative;
+      display: flex;
+      align-items: baseline;
+      color: rgba($white, .75);
+      font-size: 15px;
+      line-height: 30px;
+      font-family: $font-exo-l;
+      transition: all 0.3s ease;
+      &::before {
+        content: '';
+        mask-image: url('../img/svg/arrow.svg');
+        -webkit-mask-image: url('../img/svg/arrow.svg');
+        background-color: rgba($white, .75);
+        width: 6px;
+        height: 11px;
+        position: relative;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: cover;
+        margin-right: 10px;
+      }
+      &:hover {
+        color: rgba($orange, .75);
+        text-decoration: none;
+        &::before {
+          background-color: rgba($orange, .75);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cashback</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/cabinet.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="left-side navbar navbar-expand-lg col flex-column"><a class="logo" href="#"><img src="./img/logo-black.png"></a>
+          <div class="navbar-toggler collapsed" data-toggle="collapse" data-target="#menu" aria-controls="menu"><span></span><span></span><span></span><span></span></div>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="menu-list">
+              <li class="active"><a href="personal.html">
+                  <div class="icon cabinet-ico"></div>Мой  кабинет</a></li>
+              <li><a href="deposit.html">
+                  <div class="icon deposit-ico"></div>Пополнить / Снять</a></li>
+              <li><a href="rates.html">
+                  <div class="notification-item">Новый результат
+                    <div class="notification"><span></span></div>
+                  </div>
+                  <div class="icon rates-ico"></div>Ставки invest</a></li>
+              <li><a href="cashback.html">
+                  <div class="icon cashback-ico"></div>Получить Кэшбэк</a></li>
+              <li><a href="promo.html">
+                  <div class="icon promo-ico"></div>Промо- материалы</a></li>
+              <li><a href="history.html">
+                  <div class="icon history-ico"></div>История  операций</a></li>
+              <li><a href="news-list.html">
+                  <div class="icon news-ico"></div>Новости</a></li>
+            </ul>
+          </div>
+        </nav>
+        <main class="main-items">
+          <div class="personal-header">
+            <ul class="personal-menu mr-md-auto d-none d-lg-flex">
+              <li><a href="#">Первый пункт</a></li>
+              <li><a href="#">Второй пункт</a></li>
+              <li><a href="#">Третий пункт</a></li>
+            </ul>
+            <div class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><img class="personal-avatar" src="./img/cabinet-avatar.jpg">Maria Lester
+                <div class="new_message_notification show_notification"><img src="./img/message-notification.png"><span>2</span></div></a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="settings.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#settings"></use>
+                  </svg>Управление аккаунтом</a><a class="dropdown-item" href="mail.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#mail"></use>
+                  </svg>Сообщения<span>2</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#out"></use>
+                  </svg>Выход</a></div>
+            </div>
+          </div>
+          <div class="content col pt-0">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="rates-table">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Событие</th>
+                          <th scope="col">% от банка</th>
+                          <th scope="col">Ставка</th>
+                          <th scope="col">Коэффициент</th>
+                          <th scope="col">Результат</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Футбол. Астон Вилла - Ливерпуль</td>
+                          <td>2%</td>
+                          <td>ТБ(3.5)</td>
+                          <td>3.17</td>
+                          <td>
+                            <div class="result up">
+                              <div class="result-position"></div>
+                            </div>
+                          </td>
+                          <td><a class="result-title" href="#">
+                              <div class="unlock-rates" data-toggle="tooltip" data-placement="bottom" title="Ставка опубликована абсолютно бесплатно!"></div></a></td>
+                        </tr>
+                        <tr>
+                          <td>Футбол. Арсенал - Манчестер сити</td>
+                          <td>0.5%</td>
+                          <td>Х1</td>
+                          <td>2.09</td>
+                          <td>
+                            <div class="result up">
+                              <div class="result-position"></div>
+                            </div>
+                          </td>
+                          <td><a class="result-title" href="#">
+                              <div class="lock-rates" data-toggle="tooltip" data-placement="bottom" title="Ставка доступна только для клиентов invest"></div></a></td>
+                        </tr>
+                        <tr>
+                          <td>Футбол. Астон Вилла - Ливерпуль</td>
+                          <td>2%</td>
+                          <td>ТБ(3.5)</td>
+                          <td>3.17</td>
+                          <td>
+                            <div class="result equal">
+                              <div class="result-position"></div><a class="result-title" href="#">Бесплатно!
+                                <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Футбол. Астон Вилла - Ливерпуль</td>
+                          <td>2%</td>
+                          <td>ТБ(3.5)</td>
+                          <td>3.17</td>
+                          <td>
+                            <div class="result up">
+                              <div class="result-position"></div><a class="result-title" href="#">Бесплатно!
+                                <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Футбол. Астон Вилла - Ливерпуль</td>
+                          <td>2%</td>
+                          <td>ТБ(3.5)</td>
+                          <td>3.17</td>
+                          <td>
+                            <div class="result up">
+                              <div class="result-position"></div><a class="result-title" href="#">Бесплатно!
+                                <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Футбол. Арсенал - Манчестер сити</td>
+                          <td>0.5%</td>
+                          <td>Х1</td>
+                          <td>2.09</td>
+                          <td>
+                            <div class="result down">
+                              <div class="result-position"></div><a class="result-title" href="#">Бесплатно!
+                                <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Футбол. Астон Вилла - Ливерпуль</td>
+                          <td>2%</td>
+                          <td>ТБ(3.5)</td>
+                          <td>3.17</td>
+                          <td>
+                            <div class="result equal">
+                              <div class="result-position"></div><a class="result-title" href="#">Бесплатно!
+                                <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="notification"><span></span></div>Футбол. Астон Вилла - Ливерпуль
+                          </td>
+                          <td>2%</td>
+                          <td>ТБ(3.5)</td>
+                          <td>3.17</td>
+                          <td>
+                            <div class="result up">
+                              <div class="result-position"></div><a class="result-title" href="#">Бесплатно!
+                                <div class="personal-balance--tooltip" data-toggle="tooltip" data-placement="bottom" title="sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto">?</div></a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="about-full-description__body">
+                    <blockquote>
+                      <p class="blockquote">Здесь представлены события, среди которых invest распределил клиентский капитал.</p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 pl-lg-1">
+                <div class="growth rates-chat h-auto">
+                  <div class="rates-chat__item">
+                    <p>Отличные новости. Последнее событие прошло! Ваш сегодняшний результат+5.25%! Отличного дня! Ваш, аналитик Айраз! Ожидайте завтрашней рассылки!</p>
+                    <div class="current-day-result">
+                      <div class="current-day-result__title">Текущий<br>результат дня</div>
+                      <div class="ProgressBar ProgressBar--animateAll" data-progress="52.5">
+                        <svg class="ProgressBar-contentCircle" viewbox="0 0 200 200">
+                          <defs>
+                            <lineargradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                              <stop offset="0%" stop-color="rgb(255,96,0)" stop-opacity="1"></stop>
+                              <stop offset="100%" stop-color="rgb(147,32,125)" stop-opacity="1"></stop>
+                            </lineargradient>
+                          </defs>
+                          <circle class="ProgressBar-background" transform="rotate(-90, 100, 100)" cx="100" cy="100" r="95"></circle>
+                          <circle class="ProgressBar-circle" transform="rotate(-90, 100, 100)" cx="100" cy="100" r="95" stroke="url(#gradient)"></circle><span class="ProgressBar-percentage ProgressBar-percentage--count"></span>
+                        </svg>
+                      </div><a class="current-day-result__link" href="#">Обсудить</a>
+                    </div>
+                  </div>
+                  <div class="rates-chat__item--analyst">
+                    <div class="rates-chat__item--analyst__avatar"><img src="./img/cabinet-avatar.jpg"></div>
+                    <div class="rates-chat__item--analyst__name">Алексей, Ведущий аналитик сервиса invest</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./js/cabinet-libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

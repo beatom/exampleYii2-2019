@@ -1,0 +1,21 @@
+.registration-form .form-item {
+    padding: 70px 70px 20px 55px;
+}
+
+@media (max-width: 767px) {
+    .registration-form .form-item {
+        padding: 45px 20px 20px;
+    }
+}
+.navbar-nav .nav-link {
+    margin-right: 30px;
+}
+
+.get-sms.sms_blocked {
+    color: gray !important;
+    cursor: default;
+}
+
+.get-sms.sms_blocked:hover {
+    text-decoration: none;
+}

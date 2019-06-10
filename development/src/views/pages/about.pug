@@ -1,0 +1,12 @@
+extends ../extends/layout
+block variables
+  - var title = "About page";
+
+block content
+  .outer-indent
+    include ../components/about-description
+    include ../components/team
+    include ../components/benefits
+    include ../components/treaties-agreements
+
+  include ../includes/modal

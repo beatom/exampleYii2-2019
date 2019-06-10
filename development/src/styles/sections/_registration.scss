@@ -1,0 +1,47 @@
+.registration {
+  background-image: -moz-linear-gradient( -73deg, rgb(251,111,76) 0%, rgb(217,88,157) 100%);
+  background-image: -webkit-linear-gradient( -73deg, rgb(251,111,76) 0%, rgb(217,88,157) 100%);
+  background-image: -ms-linear-gradient( -73deg, rgb(251,111,76) 0%, rgb(217,88,157) 100%);
+  padding-top: 60px;
+  text-align: center;
+  h4 {
+    font-family: $font-exo-m;
+    line-height: normal;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    &.default-btn {
+      display: table;
+      padding: 22px 39px;
+      background: #181818;
+      box-shadow: 0 10px 20px 0 rgba(24, 24, 24, 0.4);
+    }
+  }
+  &-info {
+    text-align: left;
+  }
+  &-img {
+    max-width: 652px;
+    height: auto;
+  }
+  .settings-account__btn {
+    color: $white;
+    &:after {
+      background: $white;
+    }
+  }
+}
+
+@include adapt_to('desktop') {
+  .registration{
+    &-img {
+      max-width: 100%;
+      margin: auto;
+    }
+    &-info {
+      margin-top: 10px;
+    }
+  }
+}

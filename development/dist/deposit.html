@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Deposit</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/cabinet.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="left-side navbar navbar-expand-lg col flex-column"><a class="logo" href="#"><img src="./img/logo-black.png"></a>
+          <div class="navbar-toggler collapsed" data-toggle="collapse" data-target="#menu" aria-controls="menu"><span></span><span></span><span></span><span></span></div>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="menu-list">
+              <li class="active"><a href="personal.html">
+                  <div class="icon cabinet-ico"></div>Мой  кабинет</a></li>
+              <li><a href="deposit.html">
+                  <div class="icon deposit-ico"></div>Пополнить / Снять</a></li>
+              <li><a href="rates.html">
+                  <div class="notification-item">Новый результат
+                    <div class="notification"><span></span></div>
+                  </div>
+                  <div class="icon rates-ico"></div>Ставки invest</a></li>
+              <li><a href="cashback.html">
+                  <div class="icon cashback-ico"></div>Получить Кэшбэк</a></li>
+              <li><a href="promo.html">
+                  <div class="icon promo-ico"></div>Промо- материалы</a></li>
+              <li><a href="history.html">
+                  <div class="icon history-ico"></div>История  операций</a></li>
+              <li><a href="news-list.html">
+                  <div class="icon news-ico"></div>Новости</a></li>
+            </ul>
+          </div>
+        </nav>
+        <main class="main-items">
+          <div class="personal-header">
+            <ul class="personal-menu mr-md-auto d-none d-lg-flex">
+              <li><a href="#">Первый пункт</a></li>
+              <li><a href="#">Второй пункт</a></li>
+              <li><a href="#">Третий пункт</a></li>
+            </ul>
+            <div class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><img class="personal-avatar" src="./img/cabinet-avatar.jpg">Maria Lester
+                <div class="new_message_notification show_notification"><img src="./img/message-notification.png"><span>2</span></div></a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="settings.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#settings"></use>
+                  </svg>Управление аккаунтом</a><a class="dropdown-item" href="mail.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#mail"></use>
+                  </svg>Сообщения<span>2</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#out"></use>
+                  </svg>Выход</a></div>
+            </div>
+          </div>
+          <div class="content col pt-0">
+            <div class="row">
+              <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="payments">
+                  <div class="payments__link"><a class="payments__link-item active" href="#">Пополнить</a><a class="payments__link-item" href="#">Cнять</a></div>
+                  <div class="payments-items">
+                    <div class="payments-item"><img src="./img/payment-1.png"></div>
+                    <div class="payments-item"><img src="./img/payment-2.png"></div>
+                    <div class="payments-item"><img src="./img/payment-3.png"></div>
+                    <div class="payments-item"><img src="./img/payment-4.png"></div>
+                    <div class="payments-item"><img src="./img/payment-5.png"></div>
+                    <div class="payments-item"><img src="./img/payment-6.png"></div>
+                    <div class="payments-item"><img src="./img/payment-7.png"></div>
+                    <div class="payments-item"><img src="./img/payment-8.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 pl-lg-1">
+                <div class="deposit-payments-form">
+                  <div class="deposit-payments-form__top">
+                    <div class="deposit-payments-form__payment--item"><img class="deposit-payments-form__payment" src="img/payment-1.png"></div>
+                    <div class="deposit-payments-form__deposit">Пополнение счета через<span>Visa/MasterCard</span></div>
+                  </div>
+                  <form class="deposit-payments-form__amount" action="#">
+                    <div class="form-group">
+                      <label>Введите сумму</label>
+                      <div class="input-group-append">
+                        <input class="form-control" type="text" placeholder="|"><span>$</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button class="default-btn" type="submit">Пополнить</button>
+                    </div>
+                  </form>
+                  <div class="deposit-payments-form__info">
+                    <div class="deposit-payments-form__info--item">Сумма пополнения (мин/макс):</div>
+                    <div class="deposit-payments-form__info--item__amount">500 RUB / 100 000 RUB</div>
+                  </div>
+                  <div class="deposit-payments-form__info">
+                    <div class="deposit-payments-form__info--item">Комиссия:</div>
+                    <div class="deposit-payments-form__info--item__amount">1.5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./js/cabinet-libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

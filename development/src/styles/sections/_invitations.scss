@@ -1,0 +1,57 @@
+.invitations {
+  border-radius: 6px;
+  background-color: $white;
+  box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.3);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  &--title {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: $font-exo-b;
+    color: #222222;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 17px;
+  }
+  &--invited-me {
+    margin-left: auto;
+  }
+  &--table {
+    box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.15);
+    background: $white;
+    border: 1px solid rgb(222, 230, 231);
+    border-radius: 6px;
+    .table {
+      margin-bottom: 0;
+    }
+    thead {
+      th {
+        background: #eff5f6;
+        border: none;
+        padding: 15px 20px;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: $font-exo-b;
+        color: #222222;
+      }
+    }
+    tbody {
+      td {
+        color: #222222;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: $font-exo;
+        border-top: 1px solid rgb(239, 239, 239);
+        padding: 10px 20px;
+        &.registration-date {
+          color: #888888;
+        }
+        &.income {
+          color: #d15810;
+        }
+      }
+    }
+  }
+}

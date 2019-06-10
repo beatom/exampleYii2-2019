@@ -1,0 +1,201 @@
+.cashback-balance {
+  height: auto;
+  padding: 0 20px;
+  .personal-balance {
+    &__item {
+      background-position: center 80%;
+      &--title {
+        margin-bottom: 20px;
+        margin-top: 5px;
+      }
+      &--balance {
+        margin-top: 87px;
+      }
+    }
+    &__copy-link {
+      &--title {
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        color: #d15810;
+        font-family: $font-exo-b;
+        margin-bottom: 16px;
+      }
+      &--item {
+        display: flex;
+        align-items: center;
+        box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.15);
+        border: 1px solid rgb(201, 214, 216);
+        border-radius: 23px;
+        max-width: 450px;
+        margin: auto auto 21px;
+        background: $white;
+        flex-flow: row wrap;
+        justify-content: center;
+        .icon {
+          border-radius: 50%;
+          width: 31px;
+          height: 31px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1 0 auto;
+          margin: 6px 10px 6px 0;
+          &-vk {
+            background: #6d93bb;
+            .ico {
+              width: 17px;
+              height: 10px;
+              fill: $white;
+            }
+          }
+          &-facebook {
+            background: #647fb4;
+            .ico {
+              width: 7px;
+              height: 17px;
+              fill: $white;
+            }
+          }
+          &-twitter {
+            background: #70abd7;
+            .ico {
+              width: 15px;
+              height: 13px;
+            }
+          }
+          &-copy {
+            width: 14px;
+            height: 16px;
+            margin-left: 20px;
+            margin-right: 10px;
+            display: flex;
+            flex: 1 0 auto;
+            &__item {
+              background: transparent;
+              border: none;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .form-control {
+          border: none;
+          background: transparent;
+          border-left: 1px solid rgb(201, 214, 216);
+          font-size: 14px;
+          font-family: $font-exo;
+          color: #888888;
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          border-radius: 0;
+          @include adapt_to('large-phone') {
+            font-size: 13px;
+          }
+          span {
+            color: #222222;
+          }
+        }
+        .social-list {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          list-style: none;
+        }
+      }
+      &--code {
+        color: #222222;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: $font-exo-b;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        @include adapt_to('large-phone') {
+          line-height: 24px;
+        }
+        span {
+          border-radius: 4px;
+          background-color: rgb(223, 234, 237);
+          padding: 7px 14px;
+          text-transform: uppercase;
+          font-size: 13px;
+          color: #222222;
+          margin-left: 10px;
+        }
+      }
+      p {
+        max-width: 560px;
+        margin: auto auto 25px;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: $font-exo;
+        color: #888888;
+        text-align: center;
+        span {
+          color: #222222;
+        }
+      }
+    }
+    &__example {
+      background: #bb6735 url('../img/svg/lines.svg') -60px 258px;
+      background-size:  639px 335px;
+      color: $white;
+      box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.5);
+      border-radius: 6px;
+      margin-bottom: 20px;
+      padding: 0 40px 20px 30px;
+      text-align: center;
+      position: relative;
+      &::before {
+        content: '';
+        background: url('../img/svg/cashback-bg-ico.svg') no-repeat left;
+        position: absolute;
+        width: 61px;
+        height: 60px;
+        left: 20px;
+        top: -16px;
+        z-index: 1;
+      }
+      &::after {
+        content: '';
+        background: url('../img/svg/cashback-bg.svg') top center, -webkit-linear-gradient(-90deg, rgb(200, 117, 67) 0%, rgba(187, 103, 53, 0) 70%) top;
+        position: absolute;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 6px;
+      }
+      &--title {
+        padding-top: 25px;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: $font-exo-b;
+        @extend .position;
+      }
+      p {
+        color: $white;
+        font-size: 13px;
+        margin-top: 15px;
+        line-height: 16px;
+        margin-bottom: 10px;
+        @extend .position;
+      }
+    }
+  }
+  p {
+    max-width: 560px;
+    margin: auto auto 25px;
+    font-size: 14px;
+    line-height: normal;
+    color: #222222;
+    font-family: $font-exo;
+    text-align: center;
+  }
+}

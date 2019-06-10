@@ -1,0 +1,63 @@
+@mixin adapt_to($screen) {
+  @if $screen == "wide_screen" {
+    @media (min-width: 1441px) {
+      @content
+    }
+  } @else if $screen == "tablet_landscape_great" {
+    @media (max-width: 1400px) and (orientation: landscape) {
+      @content
+    }
+  } @else if $screen == "tablet_portrait_great" {
+    @media (max-width: 1400px) and (orientation: portrait) {
+      @content
+    }
+  } @else if $screen == "tablet_landscape" {
+    @media (max-width: 1050px) and (orientation: landscape) {
+      @content
+    }
+  } @else if $screen == "tablet_portrait" {
+    @media (max-width: 1024px) and (orientation: portrait) {
+      @content
+    }
+  } @else if $screen == "phone_landscape_great" {
+    @media (max-width: 700px) and (orientation: landscape) {
+      @content
+    }
+  } @else if $screen == "phone_portrait_great" {
+    @media (max-width: 500px) and (orientation: portrait) {
+      @content
+    }
+  } @else if $screen == "phone_landscape" {
+    @media (max-width: 500px) and (orientation: landscape) {
+      @content
+    }
+  } @else if $screen == "phone_portrait" {
+    @media (max-width: 500px) and (orientation: portrait) {
+      @content
+    }
+  } @else if $screen == "desktop" {
+    @media (max-width: 991px) {
+      @content
+    }
+  } @else if $screen == "laptop-big" {
+    @media (max-width: 1199px) {
+      @content
+    }
+  } @else if $screen == "laptop" {
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      @content
+    }
+  } @else if $screen == "tablet" {
+    @media (max-width: 1023px) {
+      @content
+    }
+  } @else if $screen == "phone" {
+    @media (max-width: 568px) {
+      @content
+    }
+  } @else if $screen == "large-phone" {
+    @media (max-width: 768px) {
+      @content
+    }
+  }
+}

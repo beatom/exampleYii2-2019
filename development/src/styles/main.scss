@@ -1,0 +1,44 @@
+@import "libs";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/extends";
+@import "utils/support";
+@import "utils/fonts";
+@import "includes/header";
+@import "includes/footer";
+@import "components/component";
+@import "sections/section";
+
+
+
+h1, h2, h3, h4, ul {
+	padding: 0;
+	margin: 0;
+}
+
+code {
+	background: rgba(#000, 0.2);
+	padding: 5px;
+	margin-right: 5px;
+}
+
+body {
+	background: $white;
+	color: $white;
+	overflow-x: hidden;
+}
+
+.outer-indent {
+	margin-top: 0;
+	position: relative;
+	@include adapt_to('large-phone') {
+		overflow-x: hidden;
+	}
+}
+
+h2 {
+	text-align: center;
+	font-size: 36px;
+	font-family: $font-exo-m;
+	line-height: normal;
+}

@@ -1,0 +1,12 @@
+extends ../extends/personal
+block variables
+  - var title = "Promo"
+
+block content
+  .container-fluid
+    .row
+      include ../includes/personal-aside
+      main.main-items
+        include ../includes/personal-header
+        .content.col.pt-0
+          include ../sections/promo

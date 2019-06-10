@@ -1,0 +1,14 @@
+.show-video(style=('background-image: url(./img/modal-bg.jpg)'))
+  .show-video__close
+    svg(width='14px' height='14px')
+      path(fill-rule='evenodd' fill='rgb(49, 49, 49)' d='M13.660,13.216 L13.216,13.660 L7.000,7.444 L0.784,13.660 L0.340,13.216 L6.556,7.000 L0.340,0.783 L0.784,0.339 L7.000,6.556 L13.216,0.339 L13.660,0.783 L7.444,7.000 L13.660,13.216 Z')
+
+  .show-video__title(data-toggle="modal" data-target="#show-video") Что такое invest?
+  .u-play-style(data-toggle="modal" data-target="#show-video")
+    .u-play-video-btn
+      .u-play-video-triangle
+      .u-play-video-circle-rotate(name='play')
+  .show-video__already-seen Спасибо уже видели
+
+
+include ../includes/modal

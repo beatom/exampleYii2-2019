@@ -1,0 +1,17 @@
+extends ../extends/personal
+block variables
+  - var title = "Settings"
+
+block content
+  .container-fluid
+    .row
+      include ../includes/personal-aside
+      main.main-items
+        include ../includes/personal-header
+        .content.col.pt-0
+          .settings
+            include ../sections/settings-account
+            include ../sections/settings-verification
+            include ../sections/settings-social
+            include ../sections/settings-withdrawal
+            include ../sections/settings-password

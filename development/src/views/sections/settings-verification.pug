@@ -1,0 +1,16 @@
+.settings-verification
+  h4.settings-account__title Верификация
+  form(action='#').settings-account__form
+    .input-group
+      .form-group.col.px-0.max-w-auto
+        label Документ
+        .fileUpload
+          .control-label Загрузить файл
+          input#logo-id.attachment_upload(name='logo' type='file')
+          input#fakeUploadLogo.file-loader(placeholder='Файл не выбран' disabled='disabled')
+    .input-group
+      .info
+        p Скорее проходи верификацию. Для верифицированных у нас сниженные комиссии как на ввод, так и на вывод! Загрузите фотографию разворота паспорта в руках рядом с лицом, на фоне должен быть сайт компании invest.
+
+    .input-group
+      button(type='submit').settings-account__btn Отправить

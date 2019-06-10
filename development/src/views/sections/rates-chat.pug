@@ -1,0 +1,22 @@
+.growth.rates-chat.h-auto
+  .rates-chat__item
+    p Отличные новости. Последнее событие прошло! Ваш сегодняшний результат+5.25%! Отличного дня! Ваш, аналитик Айраз! Ожидайте завтрашней рассылки!
+    .current-day-result
+      .current-day-result__title Текущий
+        br
+        |результат дня
+      .ProgressBar.ProgressBar--animateAll(data-progress='52.5')
+        svg.ProgressBar-contentCircle(viewbox='0 0 200 200')
+          defs
+            lineargradient#gradient(x1='0%' y1='0%' x2='0%' y2='100%')
+              stop(offset='0%' stop-color='rgb(255,96,0)' stop-opacity='1')
+              stop(offset='100%' stop-color='rgb(147,32,125)' stop-opacity='1')
+
+          circle.ProgressBar-background(transform='rotate(-90, 100, 100)' cx='100' cy='100' r='95')
+          circle.ProgressBar-circle(transform='rotate(-90, 100, 100)' cx='100' cy='100' r='95' stroke="url(#gradient)")
+          span.ProgressBar-percentage.ProgressBar-percentage--count
+      a(href='#').current-day-result__link Обсудить
+  .rates-chat__item--analyst
+    .rates-chat__item--analyst__avatar
+      img(src='./img/cabinet-avatar.jpg')
+    .rates-chat__item--analyst__name Алексей, Ведущий аналитик сервиса invest

@@ -1,0 +1,201 @@
+.chat-item
+  .mobile-close
+    svg(xmlns='http://www.w3.org/2000/svg')
+      path(d='M21.005,18.830 L19.438,20.400 L10.816,11.767 L2.194,20.400 L0.626,18.830 L9.248,10.197 L0.626,1.564 L2.194,-0.006 L10.816,8.627 L19.438,-0.006 L21.005,1.564 L12.383,10.197 L21.005,18.830 Z')
+
+  .container
+    .chat
+      h2.chat-title Чат клиентов invest
+      .chat-items--wrapper
+        a(href='#').load-messages.last-news__link Загрузить еще
+        .chat-items
+          .chat-item__user-info
+            img.chat-item__user-info__avatar.rounded-circle(src='/img/cabinet-avatar.jpg', alt='')
+            .chat-item__user-info__message-count сообщений:
+              span 162
+          .chat-item__body-items
+            .chat-item__header
+              .chat-item__user-name Мария Иванова
+              .chat-item__social-list
+                li
+                  a(href='#').icons
+                    +sprite('', 'vk-ico')
+                li
+                  a(href='#').icons
+                    +sprite('', 'telegram')
+                li
+                  a(href='#').icons
+                    +sprite('', 'facebook-ico')
+                li
+                  a(href='#').icons
+                    .instagram-ico
+              .chat-item__registration-info(data-toggle="tooltip" data-placement="top" title="Данный пользователь является клиентом invest")
+                img(src='/img/svg/verification-ico.svg', alt='')
+              .chat-item__balance Баланс депозита:
+                span 50$
+            .chat-item__body
+              p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона
+              .chat-item__body--links
+                .chat-item__body--rating-items
+                  .chat-item__body--rating.like
+                    +sprite("ico", "like")
+                    | 651
+                  .chat-item__body--rating.dislike
+                    +sprite("ico", "dislike")
+                    | 12
+                .chat-item__body--posted 2 дня назад
+                a(href='#').chat-item__body--edit Ответить
+
+        .reply-list
+          .chat-items
+            .chat-item__user-info
+              img.chat-item__user-info__avatar.rounded-circle(src='/img/contact-avatar.jpg', alt='')
+              .chat-item__user-info__message-count сообщений:
+                span 162
+            .chat-item__body-items
+              .chat-item__header
+                .chat-item__user-name Аркадий Власов
+                  .chat-item__reply-to Марии
+                .chat-item__social-list
+                  li
+                    a(href='#').icons
+                      +sprite('', 'vk-ico')
+                  li
+                    a(href='#').icons
+                      +sprite('', 'telegram')
+
+                .chat-item__registration-info(data-toggle="tooltip" data-placement="top" title="Данный пользователь является клиентом invest")
+                  img(src='/img/svg/verification-ico.svg', alt='')
+                .chat-item__balance Баланс депозита:
+                  span 250$
+              .chat-item__body
+                p Новая модель деятельности предполагает независимые способы реализации инновационных методов управления процесса
+                .chat-item__body--links
+                  .chat-item__body--rating-items
+                    .chat-item__body--rating.like
+                      +sprite("ico", "like")
+                      | 651
+                    .chat-item__body--rating.dislike
+                      +sprite("ico", "dislike")
+                      | 12
+                  .chat-item__body--posted 2 дня назад
+                  a(href='#').chat-item__body--edit Ответить
+
+
+
+          .chat-items
+            .chat-item__user-info
+              img.chat-item__user-info__avatar.rounded-circle(src='/img/contact-avatar.jpg', alt='')
+              .chat-item__user-info__message-count сообщений:
+                span 162
+            .chat-item__body-items
+              .chat-item__header
+                .chat-item__user-name Дмитрий Штопр
+                  .chat-item__reply-to Аркадию
+
+                .chat-item__registration-info(data-toggle="tooltip" data-placement="top" title="Данный пользователь является клиентом invest")
+                  img(src='/img/svg/verification-ico.svg', alt='')
+                .chat-item__balance Баланс депозита:
+                  span 1550$
+              .chat-item__body
+                p Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад неважно что тут дальше главное чтобы третья строка была заполнена Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                .chat-item__body--links
+                  .chat-item__body--rating-items
+                    .chat-item__body--rating.like
+                      +sprite("ico", "like")
+                      | 651
+                    .chat-item__body--rating.dislike
+                      +sprite("ico", "dislike")
+                      | 12
+                  .chat-item__body--posted 2 дня назад
+                  a(href='#').chat-item__body--edit Ответить
+          .show-answer
+            .chat-items
+              .chat-item__user-info
+                img.chat-item__user-info__avatar.rounded-circle(src='/img/contact-avatar.jpg', alt='')
+                .chat-item__user-info__message-count сообщений:
+                  span 162
+              .chat-item__body-items
+                .chat-item__header
+                  .chat-item__user-name Дмитрий Штопр
+                    .chat-item__reply-to Аркадию
+
+                  .chat-item__registration-info(data-toggle="tooltip" data-placement="top" title="Данный пользователь является клиентом invest")
+                    img(src='/img/svg/verification-ico.svg', alt='')
+                  .chat-item__balance Баланс депозита:
+                    span 1550$
+                .chat-item__body
+                  p Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад неважно что тут дальше главное чтобы третья строка была заполнена Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                  .chat-item__body--links
+                    .chat-item__body--rating-items
+                      .chat-item__body--rating.like
+                        +sprite("ico", "like")
+                        | 651
+                      .chat-item__body--rating.dislike
+                        +sprite("ico", "dislike")
+                        | 12
+                    .chat-item__body--posted 2 дня назад
+                    a(href='#').chat-item__body--edit Ответить
+            .chat-items
+              .chat-item__user-info
+                img.chat-item__user-info__avatar.rounded-circle(src='/img/contact-avatar.jpg', alt='')
+                .chat-item__user-info__message-count сообщений:
+                  span 162
+              .chat-item__body-items
+                .chat-item__header
+                  .chat-item__user-name Дмитрий Штопр
+                    .chat-item__reply-to Аркадию
+
+                  .chat-item__registration-info(data-toggle="tooltip" data-placement="top" title="Данный пользователь является клиентом invest")
+                    img(src='/img/svg/verification-ico.svg', alt='')
+                  .chat-item__balance Баланс депозита:
+                    span 1550$
+                .chat-item__body
+                  p Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад неважно что тут дальше главное чтобы третья строка была заполнена Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                  .chat-item__body--links
+                    .chat-item__body--rating-items
+                      .chat-item__body--rating.like
+                        +sprite("ico", "like")
+                        | 651
+                      .chat-item__body--rating.dislike
+                        +sprite("ico", "dislike")
+                        | 12
+                    .chat-item__body--posted 2 дня назад
+                    a(href='#').chat-item__body--edit Ответить
+          .chat-item__show-all
+            +sprite('', 'arrow-down')
+            | Показать все ответы  8
+          .chat-items
+            .chat-item__user-info
+              img.chat-item__user-info__avatar.rounded-circle(src='/img/contact-avatar.jpg', alt='')
+              .chat-item__user-info__message-count сообщений:
+                span 162
+            .chat-item__body-items
+              .chat-item__header
+                .chat-item__user-name Дмитрий Штопр
+                  .chat-item__reply-to Аркадию
+
+                .chat-item__registration-info(data-toggle="tooltip" data-placement="top" title="Данный пользователь является клиентом invest")
+                  img(src='/img/svg/verification-ico.svg', alt='')
+                .chat-item__balance Баланс депозита:
+                  span 1550$
+              .chat-item__body
+                p Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад неважно что тут дальше главное чтобы третья строка была заполнена Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                .chat-item__body--links
+                  .chat-item__body--rating-items
+                    .chat-item__body--rating.like
+                      +sprite("ico", "like")
+                      | 651
+                    .chat-item__body--rating.dislike
+                      +sprite("ico", "dislike")
+                      | 12
+                  .chat-item__body--posted 2 дня назад
+                  a(href='#').chat-item__body--edit редактировать
+
+      .chat-items__bottom
+        .container
+          .chat-area
+            form.form-chat(action='#')
+              a(href='#').message-to Сообщение кому
+              textarea(name='message' placeholder='Написать сообщение...')
+              button(type='submit').send-btn

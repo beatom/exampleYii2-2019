@@ -1,0 +1,19 @@
+.settings-withdrawal
+  h4.settings-account__title Реквизиты для вывода
+  .input-group.align-items-baseline
+    .form-group.col-lg-4.px-0
+      .settings-withdrawal__item
+        .settings-withdrawal__item--title Выберите платёжную систему
+        ul.settings-withdrawal__item--list
+          li
+            a(href='#').settings-withdrawal__item--list__item Яндекс.Деньги
+          li
+            a(href='#').settings-withdrawal__item--list__item Карта
+          li.active
+            a(href='#').settings-withdrawal__item--list__item Perfect money
+          li
+            a(href='#').settings-withdrawal__item--list__item Payeer
+
+    .form-group.col-lg-4.px-0.align-items-baseline
+      input(type='text' placeholder='Введите смс код').form-control.sms-code
+      button(type='submit').settings-account__btn.mb-2 Подтвердить

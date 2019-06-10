@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Promo</title>
+    <meta name="theme-color" content="#161719">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/cabinet.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="left-side navbar navbar-expand-lg col flex-column"><a class="logo" href="#"><img src="./img/logo-black.png"></a>
+          <div class="navbar-toggler collapsed" data-toggle="collapse" data-target="#menu" aria-controls="menu"><span></span><span></span><span></span><span></span></div>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="menu-list">
+              <li class="active"><a href="personal.html">
+                  <div class="icon cabinet-ico"></div>Мой  кабинет</a></li>
+              <li><a href="deposit.html">
+                  <div class="icon deposit-ico"></div>Пополнить / Снять</a></li>
+              <li><a href="rates.html">
+                  <div class="notification-item">Новый результат
+                    <div class="notification"><span></span></div>
+                  </div>
+                  <div class="icon rates-ico"></div>Ставки invest</a></li>
+              <li><a href="cashback.html">
+                  <div class="icon cashback-ico"></div>Получить Кэшбэк</a></li>
+              <li><a href="promo.html">
+                  <div class="icon promo-ico"></div>Промо- материалы</a></li>
+              <li><a href="history.html">
+                  <div class="icon history-ico"></div>История  операций</a></li>
+              <li><a href="news-list.html">
+                  <div class="icon news-ico"></div>Новости</a></li>
+            </ul>
+          </div>
+        </nav>
+        <main class="main-items">
+          <div class="personal-header">
+            <ul class="personal-menu mr-md-auto d-none d-lg-flex">
+              <li><a href="#">Первый пункт</a></li>
+              <li><a href="#">Второй пункт</a></li>
+              <li><a href="#">Третий пункт</a></li>
+            </ul>
+            <div class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><img class="personal-avatar" src="./img/cabinet-avatar.jpg">Maria Lester
+                <div class="new_message_notification show_notification"><img src="./img/message-notification.png"><span>2</span></div></a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="settings.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#settings"></use>
+                  </svg>Управление аккаунтом</a><a class="dropdown-item" href="mail.html">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#mail"></use>
+                  </svg>Сообщения<span>2</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprites/sprite.svg#out"></use>
+                  </svg>Выход</a></div>
+            </div>
+          </div>
+          <div class="content col pt-0">
+            <div class="promo">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item"><a class="nav-link active" id="banner-tab" data-toggle="tab" href="#banner" role="tab" aria-controls="banner" aria-selected="true">Статичные баннера</a></li>
+                <li class="nav-item"><a class="nav-link" id="gif-tab" data-toggle="tab" href="#gif" role="tab" aria-controls="gif" aria-selected="false">Гиф-Баннера</a></li>
+                <li class="nav-item"><a class="nav-link" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="false">HTML-баннера</a></li>
+                <li class="nav-item"><a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Видео</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="banner" role="tabpanel" aria-labelledby="banner-tab">
+                  <div class="promo-content">
+                    <div class="promo-content__top" data-target=".grid-banner">
+                      <div class="promo-content__top--title">Размеры:</div>
+                      <button class="button is-checked" data-filter="*">show all</button>
+                      <button class="button" data-filter=".728x90">728x90</button>
+                      <button class="button" data-filter=".468x60">468x60</button>
+                      <button class="button" data-filter=".125x125">125x125</button>
+                      <button class="button" data-filter=".160x600">160x600</button>
+                      <button class="button" data-filter=".250x300">250x300</button>
+                      <button class="button" data-filter=".200x300">200x300</button>
+                    </div>
+                    <div class="grid grid-banner">
+                      <div class="element-item 728x90" data-category="728x90">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 468x60" data-category="468x60">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 125x125" data-category="125x125">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 160x600" data-category="160x600">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-2.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 250x300" data-category="250x300">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 200x300" data-category="200x300">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-2.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="gif" role="tabpanel" aria-labelledby="gif-tab">
+                  <div class="promo-content">
+                    <div class="promo-content__top" data-target=".grid-gif">
+                      <div class="promo-content__top--title">Размеры:</div>
+                      <button class="button is-checked" data-filter="*">show all</button>
+                      <button class="button" data-filter=".728x90">728x90</button>
+                      <button class="button" data-filter=".468x60">468x60</button>
+                      <button class="button" data-filter=".125x125">125x125</button>
+                      <button class="button" data-filter=".160x600">160x600</button>
+                      <button class="button" data-filter=".250x300">250x300</button>
+                      <button class="button" data-filter=".200x300">200x300</button>
+                    </div>
+                    <div class="grid grid-gif">
+                      <div class="element-item 728x90" data-category="728x90">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 468x60" data-category="468x60">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 125x125" data-category="125x125">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 160x600" data-category="160x600">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-2.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 250x300" data-category="250x300">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 200x300" data-category="200x300">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-2.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="html" role="tabpanel" aria-labelledby="html-tab">
+                  <div class="promo-content">
+                    <div class="promo-content__top" data-target=".grid-html">
+                      <div class="promo-content__top--title">Размеры:</div>
+                      <button class="button is-checked" data-filter="*">show all</button>
+                      <button class="button" data-filter=".728x90">728x90</button>
+                      <button class="button" data-filter=".468x60">468x60</button>
+                      <button class="button" data-filter=".125x125">125x125</button>
+                      <button class="button" data-filter=".160x600">160x600</button>
+                      <button class="button" data-filter=".250x300">250x300</button>
+                      <button class="button" data-filter=".200x300">200x300</button>
+                    </div>
+                    <div class="grid grid-html">
+                      <div class="element-item 728x90" data-category="728x90">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 468x60" data-category="468x60">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 125x125" data-category="125x125">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 160x600" data-category="160x600">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-2.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 250x300" data-category="250x300">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-1.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                      <div class="element-item 200x300" data-category="200x300">
+                        <div class="banner-img" style="background-image: url(&quot;./img/banner-2.jpg&quot;)"></div>
+                        <div class="banner-info">
+                          <div class="banner-info__code">
+                            <button class="banner-info__code--copy" type="submit"></button><code class="banner-info__code--code">&lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;</code>
+                          </div><a class="default-btn" href="#">скачать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+                  <div class="promo-content">
+                    <div class="promo-content__video__item">
+                      <div class="promo-content__video">
+                        <div class="promo-content__video--img" style="background-image: url(&quot;./img/banner-avatar.jpg&quot;)">
+                          <div class="promo-content__video--play">
+                            <div class="promo-content__video--play__btn"></div>
+                          </div><a class="promo-content__video--download" href="#" data-toggle="tooltip" data-placement="right" data-html="true" title="&lt;div class='download-tooltip'&gt;скачать&lt;/div&gt;"></a>
+                        </div>
+                        <div class="promo-content__video--info">
+                          <div class="promo-content__video--info__title">Почему именно invest?</div>
+                          <div class="promo-content__video--info__description">Прозрачная схема работы. Быстрый вывод и много другое.</div>
+                        </div>
+                      </div>
+                      <div class="promo-content__video">
+                        <div class="promo-content__video--img" style="background-image: url(&quot;./img/banner-avatar.jpg&quot;)">
+                          <div class="promo-content__video--play">
+                            <div class="promo-content__video--play__btn"></div>
+                          </div><a class="promo-content__video--download" href="#" data-toggle="tooltip" data-placement="right" data-html="true" title="&lt;div class='download-tooltip'&gt;скачать&lt;/div&gt;"></a>
+                        </div>
+                        <div class="promo-content__video--info">
+                          <div class="promo-content__video--info__title">Почему именно invest?</div>
+                          <div class="promo-content__video--info__description">Прозрачная схема работы. Быстрый вывод и много другое.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./js/cabinet-libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

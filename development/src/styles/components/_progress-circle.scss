@@ -1,0 +1,76 @@
+.ProgressBar,
+.ProgressBar-contentCircle {
+  height: 110px;
+  position: relative;
+  width: 110px;
+  display: flex;
+}
+
+.ProgressBar {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: -15px;
+    background: url('../img/progress-circle.png') no-repeat center;
+  }
+}
+
+.ProgressBar-background {
+  stroke: #ebcee6;
+  z-index: 0;
+}
+
+.ProgressBar-background,
+.ProgressBar-circle {
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  position: relative;
+  z-index: 10;
+  fill: none;
+}
+
+.ProgressBar-percentage {
+  color: #333333;
+  font-size: 15px;
+  font-family: $font-exo;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.progress-info {
+  position: absolute;
+  left: 100%;
+  width: 200px;
+  font-size: 14px;
+  color: #333333;
+  font-family: $font-exo;
+  margin-left: 30px;
+  &-item {
+    width: 110px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 0;
+  }
+  @include adapt_to('large-phone') {
+    position: relative;
+    left: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+    &-item {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}

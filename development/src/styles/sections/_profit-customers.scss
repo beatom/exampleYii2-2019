@@ -1,0 +1,59 @@
+.profit-customers {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(1, 2, 3, 0.1) 100%), #ffffff;
+  background-blend-mode: normal;
+  color: $default;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  @extend .position;
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--profit {
+      font-size: 18px;
+      font-family: $font-exo;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      margin-right: 30px;
+      line-height: normal;
+    }
+    .why-trusted__item--ico {
+      width: 84px;
+      height: 84px;
+      fill: #fb5e05;
+      &::before,
+      &::after {
+        border-color: #fb5e05 transparent transparent transparent;
+        border-width: 3px;
+        width: 92px;
+        height: 92px;
+      }
+      &__item {
+        width: 84px;
+        height: 84px;
+        border: 6px solid #fb5e05;
+      }
+      .profit {
+        font-size: 20px;
+        &-item {
+          font-size: 18px;
+          font-family: $font-exo;
+          align-items: baseline;
+          line-height: 18px;
+          display: flex;
+          padding: 6px 6px 10px 0;
+        }
+      }
+      .persent {
+        font-size: 14px;
+      }
+    }
+    @include adapt_to('large-phone') {
+      flex-wrap: wrap;
+      &--profit {
+        margin-right: 10px;
+      }
+    }
+  }
+}

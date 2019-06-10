@@ -1,0 +1,287 @@
+/* after registration modal with steps start */
+.slider-for > div, .slick-slide, .date-item {
+    margin: auto;
+    text-align: center;
+}
+.col {
+    -webkit-flex-basis: unset;
+    -ms-flex-preferred-size: unset;
+    flex-basis: unset;
+}
+
+.new_message_notification {
+    height: 15px;
+    position: absolute;
+    right: 45px;
+    display: none;
+}
+
+.new_message_notification.show_notification {
+    display: block;
+}
+
+
+.modal-steps {
+    position: relative; margin: auto; max-width: 862px; border-radius: 10px; background: #fff; padding: 40px 10px 70px;
+    text-align: center; font-family: 'Exo 2', sans-serif; font-size: 16px; color: #222; line-height: normal;
+    width: 100%;
+}
+.modal-steps--title {
+    font-size: 22px;
+}
+.modal-steps--levels {
+    display: flex; max-width: 340px; margin: 34px auto 0; justify-content: space-between; -ms-align-items: center;
+    align-items: center;
+}
+.modal-steps--levels-n {
+    position: relative; display: flex; justify-content: center; text-align: center; -ms-align-items: center;
+    align-items: center; border: solid 1px #d3ebf0; border-radius: 50%; background: #fff; min-width: 40px;
+    min-height: 40px; max-width: 40px; font-size: 21px; color: #b7e0e8;
+}
+.modal-steps--levels-n.ready {
+    background-color: #9a2476; border-color: #9a2476; color: #fff;
+}
+.modal-steps--levels-line {
+    position: relative; max-width: 110px; min-width: 110px; height: 2px; background: #d3ebf0;
+}
+.modal-steps--levels-line:before {
+    content: ''; display: block; position: absolute; left: 50%; top: 50%; width: 10px; height: 10px;
+    border: solid 1px #d3ebf0; border-radius: 50%; background: #fff; margin: -6px 0 0 -5px;
+}
+.modal-steps--levels-line.ready {
+    background-image: linear-gradient(to right, #af315c, #c23c47);
+}
+.modal-steps--levels-line.ready:before {
+    border-color: #a1286e;
+}
+.modal-steps--flex {
+    display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 630px;
+    margin: 0 auto;
+}
+.modal-steps--item {
+    position: relative; margin-top: 45px;
+}
+.modal-steps--item-icon {
+    background: url(../img/ellipse.png); width: 104px; height: 106px; margin: 0 auto 18px; position: relative;
+    display: flex; justify-content: center; -ms-align-items: center; align-items: center;
+}
+.modal-steps--item-icon span {
+    display: none;
+}
+.ready .modal-steps--item-icon {
+    background-position: -104px 0;
+}
+.ready .modal-steps--item-icon span {
+    display: block;
+}
+.modal-steps--item.ready {
+    color: #95217b;
+}
+.ready .modal-steps--item-icon > img {
+    display: none;
+}
+.ready .modal-steps--item-icon:after {
+    content: ''; display: block; background: url(../img/icon-check.png) 50% 50% no-repeat #52ac62;
+    width: 27px; height: 27px; border-radius: 50%; right: 10px; top: -2px; position: absolute;
+}
+.modal-steps--btn {
+    margin: 44px auto 0; display: flex; justify-content: center; text-align: center; -ms-align-items: center;
+    align-items: center; max-width: 184px; height: 45px; background-color: #181818; box-shadow: 0 10px 20px rgba(251,93,6,.4);
+    background-image: linear-gradient(to left, #93207d, #ff6000); border-radius: 22px;
+    text-decoration: none; color: #fff; text-transform: uppercase; font-size: 14px; transition: .3s;
+}
+.modal-steps--btn:hover,
+.modal-steps--btn:active {
+    box-shadow: 0 10px 20px rgba(251,93,6,.0);
+}
+
+@media screen and (max-width: 479px) {
+
+    .modal-steps--levels {
+        max-width: 280px;
+    }
+    .modal-steps--levels-line {
+        max-width: 80px; min-width: 80px;
+    }
+    .modal-steps--item {
+        width: 100%;
+    }
+}
+
+.modal-steps-background {
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 11111111;
+    display: flex;
+    padding: 20px;
+}
+/* after registration modal with steps end */
+
+.promo-content .element-item .banner-img {
+    cursor: pointer;
+    display: inherit;
+    text-align: center;
+}
+
+.promo-content .element-item .banner-img > p {
+    margin: auto;
+    color: gray;
+}
+
+.messages-item__message {
+    text-align: center;
+    overflow: hidden;
+    max-height: 60px;
+}
+
+.deposit-payments-form__payment {
+    max-height: 50px;
+}
+
+.deposit-payments-form__payment--item {
+    height: 50px;
+}
+
+.form-group.field-investform-system_id {
+    display: none;
+}
+.slider.single-item.slider-for.slick-initialized.slick-slider > .slick-list {
+    margin: auto;
+}
+.notification_message {
+    background-color: #d2ffd3;
+    margin: 0 -20px;
+    padding: 10px 20px;
+}
+
+.personal-history__item > div, .personal-history__top--slider > div {
+    visibility: hidden;
+}
+
+label.has-star::after {
+    content: '' !important;
+}
+
+.settings .form-control.sms-code {
+    width: 170px;
+}
+
+.date-item {
+    height: 22px;
+    text-align: center;
+}
+.popup-tooltip {
+    background-color: white;
+    padding: 5px;
+}
+
+.after_upload_message {
+    font-size: 13px;
+    color: red;
+    display: none;
+}
+#show-video .modal-dialog.show-video__modal {
+    width: 100%;
+}
+
+span.ProgressBar-percentage.ProgressBar-percentage--count::after {
+    content: '%';
+    font-size: 15px!important;
+}
+
+
+.left-side .logo img {
+    width: 50px;
+    height: auto;
+    margin: 15px auto 15px;
+    display: table;
+}
+.payments__link-item {
+    color: #222222;
+}
+.payments__link-item.active {
+    color: #ff6000;
+}
+.navbar-toggler span {
+    width: 30px;
+}
+a.logo__small {
+    display: none;
+}
+
+.arriving__sum {
+    position: absolute;
+    left: 55%;
+    width: 200px;
+    margin-top: -28px;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+@media (max-width: 991px) {
+    .left-side .logo {
+        width: 60%;
+        top: unset;
+        left: unset;
+        width: auto;
+        background: #ffffff;
+        margin-left: 0%;
+        position: inherit;
+        left: 18%;
+        width: 60%;
+    }
+    .left-side .navbar-toggler {
+        padding: 30px;
+        z-index: 111111111;
+        position: absolute;
+    }
+    a.logo__big {
+        display: none;
+    }
+    a.logo__small {
+        display: inherit;
+    }
+}
+@media (max-width: 768px) {
+    .new_message_notification {
+        height: 20px;
+        right: 100px;
+    }
+    .arriving__sum {
+        position: inherit;
+
+        font-size: 12px;
+
+        display: block;
+
+        padding-bottom: 8px;
+
+        margin: auto 0 auto -7px;
+
+        left: unset;
+
+        width: unset;
+    }
+
+    .menu-list {
+        padding-bottom: 70px!important;
+
+    }
+
+    nav #mCSB_1_scrollbar_vertical {
+        display: none!important;
+    }
+}
+
+.personal-header .personal-menu li:nth-child(3) a {
+    border-left: 1px solid #dee6e7;
+    border-right: 1px solid #dee6e7;
+}
+
+.deposit-payments-form__amount.nomarginbottom .form-group {
+    margin-bottom: 0px;
+}

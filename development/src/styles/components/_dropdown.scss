@@ -1,0 +1,115 @@
+.dropdown {
+  width: 280px;
+  .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: normal;
+    color: #333333;
+    font-family: $font-exo-m;
+    padding-left: 15px;
+    text-decoration: none;
+    &::after {
+      right: 30px;
+      position: absolute;
+      -webkit-mask-image: url('../img/svg/arrow.svg');
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      background: #000000;
+      width: 5px;
+      height: 10px;
+      margin: 0;
+      transform: rotate(90deg);
+      transition: all 0.3s ease;
+    }
+  }
+  &.show {
+    background: #e6eff1;
+    .dropdown-toggle::after {
+      transform: rotate(-90deg);
+    }
+  }
+  &-menu {
+    width: 220px;
+    border: none;
+    box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.5);
+    border-radius: 2px;
+    margin: 10px 0 0 0;
+    padding: 20px;
+  }
+  &-item {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: normal;
+    font-family: $font-exo;
+    color: #888888;
+    margin-bottom: 15px;
+    &:hover, &:focus, &:active {
+      color: #555555;
+      background: none;
+      outline: none;
+    }
+    .icon {
+      fill: #555555;
+      height: 15px;
+      width: 15px;
+      margin-right: 10px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      font-size: 9px;
+      color: $white;
+      font-family: $font-exo;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+      background-color: rgb(253, 95, 3);
+      width: 12px;
+      height: 12px;
+      margin-left: 10px;
+    }
+  }
+  @include adapt_to('desktop') {
+    width: 100%;
+    top: 10px;
+    &.show {
+      background: transparent;
+    }
+    .dropdown-toggle {
+      font-size: 0;
+      padding: 0 30px 0 0;
+    }
+  }
+  .new_message_notification {
+    margin-left: 10px;
+    margin-right: 20px;
+    height: 17px;
+    right: 0;
+    display: none;
+    position: relative;
+    &.show_notification {
+      display: flex;
+    }
+    span {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      font-size: 9px;
+      color: $white;
+      font-family: $font-exo;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+      background-color: rgb(253, 95, 3);
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

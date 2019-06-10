@@ -1,0 +1,282 @@
+.management-history
+  .container
+    .row
+      .col.wow.animated.fadeIn
+        h2 История управления
+    .row
+      .col-md-5.col
+        .personal-history.wow.animated.fadeInLeft
+          .personal-history__top
+            .personal-history__top--select-date Выберите дату
+            .personal-history__top--slider
+              include ../components/data-slider
+          .personal-history__item
+            .slider-nav
+              mixin table
+                .management-history__table
+                  .table-responsive
+                    table.table
+                      thead
+                        tr
+                          th(scope='col') Пн
+                          th(scope='col') Вт
+                          th(scope='col') Ср
+                          th(scope='col') Чт
+                          th(scope='col') Пт
+                          th(scope='col').day-off Сб
+                          th(scope='col').day-off Вс
+                      tbody
+                        tr
+                          td.active
+                            .table-item.plus
+                              | +0,18%
+                              span 31 дек
+                          td
+                            .table-item.plus
+                              | +5,12%
+                              span 1
+                          td
+                            .table-item.minus
+                              | -0,22%
+                              span 2
+                          td
+                            .table-item.plus
+                              | +4,48%
+                              span 3
+                          td
+                            .table-item.plus
+                              | +1,12%
+                              span 4
+                          td
+                            .table-item.minus
+                              | -1,25%
+                              span 5
+                          td
+                            .table-item.plus
+                              | +7,12%
+                              span 6
+
+                        tr
+                          td
+                            .table-item.plus
+                              | +0,18%
+                              span 31 дек
+                          td
+                            .table-item.plus
+                              | +5,12%
+                              span 1
+                          td
+                            .table-item.minus
+                              | -0,22%
+                              span 2
+                          td
+                            .table-item.plus
+                              | +4,48%
+                              span 3
+                          td
+                            .table-item.plus
+                              | +1,12%
+                              span 4
+                          td
+                            .table-item.minus
+                              | -1,25%
+                              span 5
+                          td
+                            .table-item.plus
+                              | +7,12%
+                              span 6
+
+                        tr
+                          td
+                            .table-item.plus
+                              | +0,18%
+                              span 31 дек
+                          td
+                            .table-item.plus
+                              | +5,12%
+                              span 1
+                          td
+                            .table-item.minus
+                              | -0,22%
+                              span 2
+                          td
+                            .table-item.plus
+                              | +4,48%
+                              span 3
+                          td
+                            .table-item.plus
+                              | +1,12%
+                              span 4
+                          td
+                            .table-item.minus
+                              | -1,25%
+                              span 5
+                          td
+                            .table-item.plus
+                              | +7,12%
+                              span 6
+
+                        tr
+                          td
+                            .table-item.plus
+                              | +0,18%
+                              span 31 дек
+                          td
+                            .table-item.plus
+                              | +5,12%
+                              span 1
+                          td
+                            .table-item.minus
+                              | -0,22%
+                              span 2
+                          td
+                            .table-item.plus
+                              | +4,48%
+                              span 3
+                          td
+                            .table-item.plus
+                              | +1,12%
+                              span 4
+                          td
+                            .table-item.minus
+                              | -1,25%
+                              span 5
+                          td
+                            .table-item.plus
+                              | +7,12%
+                              span 6
+
+                        tr
+                          td
+                            .table-item.plus
+                              | +0,18%
+                              span 31 дек
+                          td
+                            .table-item.plus
+                              | +5,12%
+                              span 1
+                          td
+                            .table-item.minus
+                              | -0,22%
+                              span 2
+                          td
+                            .table-item.plus
+                              | +4,48%
+                              span 3
+                          td
+                            .table-item.next-month
+                              | +1,12%
+                              span 4
+                          td
+                            .table-item.next-month
+                              | -1,25%
+                              span 5
+                          td
+                            .table-item.next-month
+                              | +7,12%
+                              span 6
+
+              +table
+              +table
+              +table
+              +table
+              +table
+              +table
+              +table
+              +table
+              +table
+              +table
+              +table
+              +table
+      .col-md-7
+        .rates-table.wow.animated.fadeInRight
+          .table-responsive
+            table.table
+              thead
+                tr
+                  th(scope='col') Событие
+                  th(scope='col') % от банка
+                  th(scope='col') Ставка
+                  th(scope='col') Коэффициент
+                  th(scope='col') Результат
+              tbody
+                tr
+                  td Футбол. Астон Вилла - Ливерпуль
+                  td 2%
+                  td ТБ(3.5)
+                  td 3.17
+                  td
+                    .result.up
+                      .result-position
+                      a(href='#').result-title FREE
+                        .personal-balance--tooltip(data-toggle='tooltip' data-placement="bottom" title='sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto') ?
+                tr
+                  td Футбол. Арсенал - Манчестер сити
+                  td 0.5%
+                  td Х1
+                  td 2.09
+                  td
+                    .result.down
+                      .result-position
+                      a(href='#').result-title FREE
+                        .personal-balance--tooltip(data-toggle='tooltip' data-placement="bottom" title='sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto') ?
+                tr
+                  td Футбол. Астон Вилла - Ливерпуль
+                  td 2%
+                  td ТБ(3.5)
+                  td 3.17
+                  td
+                    .result.equal
+                      .result-position
+                      a(href='#').result-title FREE
+                        .personal-balance--tooltip(data-toggle='tooltip' data-placement="bottom" title='sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto') ?
+                tr
+                  td Футбол. Астон Вилла - Ливерпуль
+                  td 2%
+                  td ТБ(3.5)
+                  td 3.17
+                  td
+                    .result.up
+                      .result-position
+                      a(href='#').result-title FREE
+                        .personal-balance--tooltip(data-toggle='tooltip' data-placement="bottom" title='sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto') ?
+                tr
+                  td Футбол. Астон Вилла - Ливерпуль
+                  td 2%
+                  td ТБ(3.5)
+                  td 3.17
+                  td
+                    .result.up
+                      .result-position
+                      a(href='#').result-title FREE
+                        .personal-balance--tooltip(data-toggle='tooltip' data-placement="bottom" title='sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto') ?
+                tr
+                  td Футбол. Арсенал - Манчестер сити
+                  td 0.5%
+                  td Х1
+                  td 2.09
+                  td
+                    .result.down
+                      .result-position
+                      a(href='#').result-title FREE
+                        .personal-balance--tooltip(data-toggle='tooltip' data-placement="bottom" title='sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto') ?
+                tr
+                  td Футбол. Астон Вилла - Ливерпуль
+                  td 2%
+                  td ТБ(3.5)
+                  td 3.17
+                  td
+                    .result.equal
+                      .result-position
+                      a(href='#').result-title FREE
+                        .personal-balance--tooltip(data-toggle='tooltip' data-placement="bottom" title='sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto') ?
+                tr
+                  td Футбол. Астон Вилла - Ливерпуль
+                  td 2%
+                  td ТБ(3.5)
+                  td 3.17
+                  td
+                    .result.up
+                      .result-position
+                      a(href='#').result-title FREE
+                        .personal-balance--tooltip(data-toggle='tooltip' data-placement="bottom" title='sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto') ?

@@ -1,0 +1,50 @@
+.invitations
+  .invitations--title Мои пpиглaшённые
+    .invitations--invited-me Меня пригласил test1
+  .table-responsive.invitations--table
+    table.table
+      thead
+        tr
+          th(scope='col') Логин
+          th(scope='col') Дата регистрации
+          th(scope='col') Пополнено
+          th(scope='col') Мой доход
+      tbody
+        tr
+          td invest
+          td.registration-date 01.01.2019
+          td 349$
+          td.income 349$
+        tr
+          td Torjoms
+          td.registration-date 01.01.2019
+          td 349$
+          td.income 349$
+        tr
+          td Ipgoolqeer
+          td.registration-date 11.7.2018
+          td 349$
+          td.income 349$
+        tr
+          td Siopflor
+          td.registration-date 30.11.2017
+          td 349$
+          td.income 349$
+        tr
+          td Amercrap
+          td.registration-date 01.09.2018
+          td 349$
+          td.income 349$
+
+
+  nav(aria-label='Page navigation example')
+    ul.pagination
+      li.page-item
+        a.page-link(href='#') 1
+      li.page-item.active
+        a.page-link(href='#') 2
+      li.page-item
+        a.page-link(href='#') 3
+      li.page-item
+        a.page-link(href='#' aria-label='Next')
+          +sprite("ico", "arrow")

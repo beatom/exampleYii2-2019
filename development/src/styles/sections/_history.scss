@@ -1,0 +1,34 @@
+.history-operations {
+  border-radius: 8px;
+  background: $white;
+  box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.3);
+  padding: 20px;
+  .invitations--title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .invitations--table {
+    thead {
+      th {
+        padding: 12px 20px;
+      }
+    }
+    tbody td {
+      font-size: 16px;
+      color: #888888;
+      padding: 16px 20px;
+      &.value {
+        color: #d15810;
+      }
+      &.successfully {
+        color: #068429;
+      }
+      &.rejected {
+        color: #ff0000;
+      }
+      &.treatment{
+        color: #0096ff;
+      }
+    }
+  }
+}

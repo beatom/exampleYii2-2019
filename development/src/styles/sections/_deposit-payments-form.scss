@@ -1,0 +1,109 @@
+.deposit-payments-form {
+  border-radius: 8px;
+  background: $white;
+  box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.3);
+  padding: 30px 50px;
+  @include adapt_to('large-phone') {
+    padding: 15px 20px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    @media (min-width: 992px) and (max-width: 1199px) {
+      flex-flow: row wrap;
+    }
+    @include adapt_to('large-phone') {
+      flex-flow: row wrap;
+    }
+  }
+  &__payment {
+    max-width: 156px;
+    &--item {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 18px;
+    }
+  }
+  &__deposit {
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-exo;
+    border-left: 1px solid rgb(72, 72, 72);
+    width: 50%;
+    span {
+      font-family: $font-exo-b;
+    }
+  }
+  &__amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .form-group {
+      margin-bottom: 25px;
+    }
+    label {
+      font-size: 14px;
+      line-height: normal;
+      color: #888888;
+      font-family: $font-exo;
+    }
+    .form-control {
+      box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.15);
+      border-radius: 0;
+      background: $white;
+      height: auto;
+      padding: 13px 10px;
+      font-size: 14px;
+      line-height: normal;
+      color: #222222;
+      font-family: $font-exo;
+      width: 280px;
+      border: 1px solid #e7f0f2;
+      &::placeholder {
+        color: #888888;
+      }
+    }
+    .input-group-append {
+      position: relative;
+      display: flex;
+      align-items: center;
+      span {
+        position: absolute;
+        right: 15px;
+        font-size: 14px;
+        line-height: normal;
+        color: #888888;
+        font-family: $font-exo;
+      }
+    }
+    .default-btn {
+      border: none;
+      padding: 10px 42px;
+      margin-bottom: 10px;
+    }
+  }
+  &__info {
+    display: flex;
+    font-size: 14px;
+    line-height: 18px;
+    color: #222222;
+    font-family: $font-exo;
+    flex-direction: row;
+    &--item {
+      width: 50%;
+      margin-right: 10px;
+      &__amount {
+        width: 50%;
+        font-family: $font-exo-b;
+      }
+    }
+  }
+}

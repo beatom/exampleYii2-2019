@@ -1,0 +1,98 @@
+.personal {
+  &-header {
+    width: calc(100% - 120px);
+    box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.3);
+    background: $white;
+    display: flex;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 120px;
+    z-index: 2;
+    border-bottom: 1px solid rgb(239, 239, 239);
+    align-items: center;
+    @include adapt_to("desktop") {
+      padding: 0;
+      z-index: 10;
+      right: 0;
+      width: auto;
+      left: auto;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+    }
+    .personal-menu {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      a {
+        font-size: 14px;
+        line-height: normal;
+        color: #222222;
+        font-family: $font-exo-m;
+        padding: 9px 20px;
+        @include adapt_to("desktop") {
+          padding: 9px 10px;
+          width: 100%;
+        }
+        &:hover {
+          text-decoration: none;
+          color: #d15810;
+        }
+      }
+      li:nth-child(2) {
+        a {
+          border-left: 1px solid rgb(222, 230, 231);
+          border-right: 1px solid rgb(222, 230, 231);
+          @include adapt_to('large-phone') {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  &-avatar {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    border: 3px solid #efefef;
+    box-shadow: 0 10px 25px 0 rgba(133, 182, 184, 0.4);
+    margin: 9px 17px 7px 0;
+  }
+}
+
+@include adapt_to('large-phone') {
+  .moblie-link {
+    position: fixed;
+    right: 0;
+    top: 15px;
+    z-index: 2;
+  }
+  .personal-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@include adapt_to('large-phone') {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: $white;
+    transition: all 0.3s ease;
+    padding: 0;
+    flex-direction: column;
+    z-index: 2;
+  }
+  .offcanvas-collapse.show {
+    visibility: visible;
+    left: 0;
+  }
+}

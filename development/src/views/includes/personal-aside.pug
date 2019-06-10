@@ -1,0 +1,42 @@
+nav.left-side.navbar.navbar-expand-lg.col.flex-column
+  a(href='#').logo
+    img(src='./img/logo-black.png')
+  .navbar-toggler.collapsed(data-toggle='collapse' data-target='#menu' aria-controls='menu')
+    span
+    span
+    span
+    span
+
+  #menu.collapse.navbar-collapse
+    ul.menu-list
+      li.active
+        a(href='personal.html')
+          .icon.cabinet-ico
+          | Мой  кабинет
+      li
+        a(href='deposit.html')
+          .icon.deposit-ico
+          | Пополнить / Снять
+      li
+        a(href='rates.html')
+          .notification-item Новый результат
+            .notification
+              span
+          .icon.rates-ico
+          | Ставки invest
+      li
+        a(href='cashback.html')
+          .icon.cashback-ico
+          | Получить Кэшбэк
+      li
+        a(href='promo.html')
+          .icon.promo-ico
+          | Промо- материалы
+      li
+        a(href='history.html')
+          .icon.history-ico
+          | История  операций
+      li
+        a(href='news-list.html')
+          .icon.news-ico
+          | Новости

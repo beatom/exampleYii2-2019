@@ -1,0 +1,16 @@
+extends ../extends/personal
+block variables
+  - var title = "Deposit"
+
+block content
+  .container-fluid
+    .row
+      include ../includes/personal-aside
+      main.main-items
+        include ../includes/personal-header
+        .content.col.pt-0
+          .row
+            .col-lg-7.mb-4.mb-lg-0
+              include ../sections/deposit-payments
+            .col-lg-5.pl-lg-1
+              include ../sections/deposit-payments-form

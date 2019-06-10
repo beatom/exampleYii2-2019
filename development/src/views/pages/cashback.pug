@@ -1,0 +1,18 @@
+extends ../extends/personal
+block variables
+  - var title = "Cashback"
+
+block content
+  .container-fluid
+    .row
+      include ../includes/personal-aside
+      main.main-items
+        include ../includes/personal-header
+        .content.col.pt-0
+          .row
+            .col-lg-7
+              include ../sections/personal-balance-copy
+              include ../sections/invitations
+            .col-lg-5.pl-lg-1
+              include ../sections/growth
+

@@ -1,0 +1,201 @@
+.promo
+  ul.nav.nav-tabs(role='tablist')
+    li.nav-item
+      a#banner-tab.nav-link.active(data-toggle='tab' href='#banner' role='tab' aria-controls='banner' aria-selected='true') Статичные баннера
+    li.nav-item
+      a#gif-tab.nav-link(data-toggle='tab' href='#gif' role='tab' aria-controls='gif' aria-selected='false') Гиф-Баннера
+    li.nav-item
+      a#html-tab.nav-link(data-toggle='tab' href='#html' role='tab' aria-controls='html' aria-selected='false') HTML-баннера
+    li.nav-item
+      a#video-tab.nav-link(data-toggle='tab' href='#video' role='tab' aria-controls='video' aria-selected='false') Видео
+
+  .tab-content
+    #banner.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='banner-tab')
+      .promo-content
+        .promo-content__top(data-target=".grid-banner")
+          .promo-content__top--title Размеры:
+          button.button.is-checked(data-filter='*') show all
+          button.button(data-filter='.728x90') 728x90
+          button.button(data-filter='.468x60') 468x60
+          button.button(data-filter='.125x125') 125x125
+          button.button(data-filter='.160x600') 160x600
+          button.button(data-filter='.250x300') 250x300
+          button.button(data-filter='.200x300') 200x300
+        .grid.grid-banner
+          .element-item.728x90(data-category='728x90')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+
+          .element-item.468x60(data-category='468x60')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.125x125(data-category='125x125')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.160x600(data-category='160x600')
+            .banner-img(style='background-image: url("./img/banner-2.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.250x300(data-category='250x300')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.200x300(data-category='200x300')
+            .banner-img(style='background-image: url("./img/banner-2.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+
+    #gif.tab-pane.fade(role='tabpanel' aria-labelledby='gif-tab')
+      .promo-content
+        .promo-content__top(data-target=".grid-gif")
+          .promo-content__top--title Размеры:
+          button.button.is-checked(data-filter='*') show all
+          button.button(data-filter='.728x90') 728x90
+          button.button(data-filter='.468x60') 468x60
+          button.button(data-filter='.125x125') 125x125
+          button.button(data-filter='.160x600') 160x600
+          button.button(data-filter='.250x300') 250x300
+          button.button(data-filter='.200x300') 200x300
+        .grid.grid-gif
+          .element-item.728x90(data-category='728x90')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+
+          .element-item.468x60(data-category='468x60')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.125x125(data-category='125x125')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.160x600(data-category='160x600')
+            .banner-img(style='background-image: url("./img/banner-2.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.250x300(data-category='250x300')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.200x300(data-category='200x300')
+            .banner-img(style='background-image: url("./img/banner-2.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+
+
+    #html.tab-pane.fade(role='tabpanel' aria-labelledby='html-tab')
+      .promo-content
+        .promo-content__top(data-target=".grid-html")
+          .promo-content__top--title Размеры:
+          button.button.is-checked(data-filter='*') show all
+          button.button(data-filter='.728x90') 728x90
+          button.button(data-filter='.468x60') 468x60
+          button.button(data-filter='.125x125') 125x125
+          button.button(data-filter='.160x600') 160x600
+          button.button(data-filter='.250x300') 250x300
+          button.button(data-filter='.200x300') 200x300
+        .grid.grid-html
+          .element-item.728x90(data-category='728x90')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+
+          .element-item.468x60(data-category='468x60')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.125x125(data-category='125x125')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.160x600(data-category='160x600')
+            .banner-img(style='background-image: url("./img/banner-2.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.250x300(data-category='250x300')
+            .banner-img(style='background-image: url("./img/banner-1.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+          .element-item.200x300(data-category='200x300')
+            .banner-img(style='background-image: url("./img/banner-2.jpg")')
+            .banner-info
+              .banner-info__code
+                button(type='submit').banner-info__code--copy
+                code.banner-info__code--code &lt;iframesrc="https://invest.com/img/promo/1/468-60/index.html?link1=https://invest.com/?partner=Alex" width="468" height="61"&gt;&lt;/iframe&gt;
+              a(href='#').default-btn скачать
+
+    #video.tab-pane.fade(role='tabpanel' aria-labelledby='video-tab')
+      .promo-content
+        .promo-content__video__item
+          .promo-content__video
+            .promo-content__video--img(style='background-image: url("./img/banner-avatar.jpg")')
+              .promo-content__video--play
+                .promo-content__video--play__btn
+              a(href='#').promo-content__video--download(data-toggle="tooltip" data-placement="right" data-html="true" title="<div class='download-tooltip'>скачать</div>")
+            .promo-content__video--info
+              .promo-content__video--info__title Почему именно invest?
+              .promo-content__video--info__description Прозрачная схема работы. Быстрый вывод и много другое.
+
+          .promo-content__video
+            .promo-content__video--img(style='background-image: url("./img/banner-avatar.jpg")')
+              .promo-content__video--play
+                .promo-content__video--play__btn
+              a(href='#').promo-content__video--download(data-toggle="tooltip" data-placement="right" data-html="true" title="<div class='download-tooltip'>скачать</div>")
+            .promo-content__video--info
+              .promo-content__video--info__title Почему именно invest?
+              .promo-content__video--info__description Прозрачная схема работы. Быстрый вывод и много другое.

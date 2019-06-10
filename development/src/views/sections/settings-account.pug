@@ -1,0 +1,56 @@
+.settings-account
+  h4.settings-account__title Мои данные
+  form(action='#').settings-account__form
+    .input-group
+      .form-group.col.px-0.max-w-auto
+        label Аватар
+        .fileUpload
+          .control-label Загрузить файл
+          input.attachment_upload(name='logo' type='file')
+          input.file-loader(placeholder='Файл не выбран' disabled='disabled')
+
+    .input-group
+      .form-group.col-lg-4.px-0.has-error
+        label Имя
+        input(type='text' placeholder='Введите имя').form-control
+        p.help-block-error sdfsdfsdf
+
+      .form-group.col-lg-4.px-0
+        label Страна
+        select.form-control
+          option Выберите страну
+          option 1
+          option 2
+          option 3
+          option 4
+          option 5
+
+    .input-group
+      .form-group.col-lg-4.px-0
+        label Фамилия
+        input(type='text' placeholder='Введите фамилию').form-control
+
+      .form-group.col-lg-4.px-0
+        label Город
+        select.form-control
+          option Выберите город
+          option 1
+          option 2
+          option 3
+          option 4
+          option 5
+
+    .input-group.align-items-baseline
+      .form-group.col-lg-4.px-0
+        label Отчество
+        input(type='text' placeholder='Введите отчество').form-control
+
+      .form-group.col-lg-4.px-0.mr-0
+        label Мой номер
+        input(type='tel' placeholder='+7XXXXXXXXXX' disabled='disabled').form-control
+
+      .form-group
+        .change-phone Изменить
+
+    .input-group
+      button(type='submit').settings-account__btn Сохранить
