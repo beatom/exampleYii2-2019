@@ -41,7 +41,7 @@
     "animate.css": "^3.7.0",
     "bootstrap": "^4.3.1",
     "gulp-cli": "^2.1.0",
-    "highcharts": "^7.0.3",
+    "highcharts": "^9.0.0",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
